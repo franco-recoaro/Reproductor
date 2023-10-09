@@ -1,0 +1,192 @@
+html, body{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    width: 100%;
+    color: white;
+
+}
+
+
+/* CONTENEDOR GENERAL */
+.aplicacion{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "aside main"
+    "player player";
+}
+
+/* ASIDE */
+
+.menu{
+grid-area: aside;
+display: flex;
+flex-direction: column;
+background-color: #0F0F0F;
+gap: 5px 0;
+padding: 10px;
+}
+
+.menu .inicioBuscador{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+    width: 100%;
+}
+
+.botonesInicio{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+
+.botonesInicio>button{
+    background-color: transparent;
+    border: none;
+    height: 1.5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* TU BIBLIOTECA */
+
+.menu .biblioteca{
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.cuadrosListas{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    color: white;
+}
+
+.cuadrosListas>span{
+    display: inline-block;
+    
+}
+
+.cuadrosListas .listasIndividuales>p{
+    margin: 0;
+}
+
+/* CONTENEDOR MAIN */
+
+.main{
+    grid-area: main;
+    background-color: black;
+    padding: 15px 23px;
+}
+
+.tuMusica{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+gap: 15px;
+}
+
+.tuMusica>div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    border-radius: 20px;
+    background-color: #0F0F0F;
+}
+
+.botonPlayLista{
+    background-color: #040D12;
+    border: 0;
+}
+
+.segundaLinea{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.segundaLinea>div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 8rem;
+    border-radius: 20px;
+    background-color: #0F0F0F;
+}
+
+.terceraLinea{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+    
+    .terceraLinea>div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 8rem;
+        border-radius: 20px;
+        background-color: #0F0F0F;
+    }
+
+    .cuartaLinea{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        }
+        
+        .cuartaLinea>div{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 8rem;
+            border-radius: 20px;
+            background-color: #0F0F0F;
+        }
+
+
+/* PLAYER */
+
+.player{
+    grid-area: player;
+    background-color: #5C8374;
+    border: 1px solid blue;
+    justify-content: space-between;
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
