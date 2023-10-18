@@ -189,9 +189,7 @@ body::-webkit-scrollbar-thumb{
 
 .main {
     grid-area: main;
-    background: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(./Assets/aboutUs.jpg);
+    background: #272829;
     background-size: cover;
     padding: 15px 23px;
     width: 99%;
@@ -248,10 +246,9 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     width: 11rem;
     height: 12rem;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #0F0F0F;
     gap: 15px;
     padding-left: 5px;
@@ -279,7 +276,40 @@ body::-webkit-scrollbar-thumb{
 .segundaLinea div:hover>button>img {
     width: 30px;
     height: 30px;
-}
+    -webkit-animation: scale-up-br 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-br 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    @-webkit-keyframes botonPlayLista2 {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 100% 100%;
+                  transform-origin: 100% 100%;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 100% 100%;
+                  transform-origin: 100% 100%;
+        }
+      }
+      @keyframes scale-up-br {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 100% 100%;
+                  transform-origin: 100% 100%;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 100% 100%;
+                  transform-origin: 100% 100%;
+        }
+      }
+
+  
 
 .segundaLinea div:hover>span {
     display: none;
@@ -287,7 +317,7 @@ body::-webkit-scrollbar-thumb{
 
 
 .segundaLinea>div:hover{
-    background-color: #272829;
+    background-color:rgba(141, 141, 141, 0.2);
     cursor: pointer;
     padding: 10px;
 
@@ -313,12 +343,8 @@ body::-webkit-scrollbar-thumb{
     margin: 0px 20px;
 }
 
-.audio-player {
-    width: 300px;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+audio{
+    display: none;
 }
 
 .espaciado{
