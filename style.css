@@ -73,7 +73,7 @@ body::-webkit-scrollbar-thumb{
     background-color: #272829;
     border-radius: 10px;
 }
-
+    
 .inicioBuscador>img{
     margin-left: 0px;
 }
@@ -88,7 +88,7 @@ body::-webkit-scrollbar-thumb{
     gap: 5px;
 }
 
-.botonesInicio>button {
+.botonesInicio>div>button {
     background-color: transparent;
     border: none;
     height: 1.5rem;
@@ -96,11 +96,18 @@ body::-webkit-scrollbar-thumb{
     color: white;
     font-size: 1rem;
     font-weight: 500;
+    padding: 0;
 }
+
 
 .botonesInicio>button>img{
     margin-right: 5px;
     margin-top: 5px;
+    margin-left: 10px;
+}
+
+.fotoHome{
+    margin-right: 15px;
 }
 
 .botonesInicio>button:hover{
@@ -109,6 +116,19 @@ body::-webkit-scrollbar-thumb{
     opacity: 0.5;
 }
 
+.barraBuscador{
+    display: flex;
+    justify-content: center;
+
+}
+
+.barraBuscador>input{
+    background: transparent;
+    border: 0;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 10px;
+}
 /* TU BIBLIOTECA */
 
 .menu .biblioteca {
@@ -137,7 +157,7 @@ body::-webkit-scrollbar-thumb{
     height: 100px;
     color: white;
     background-color: transparent;
-    margin-left: 30px;
+    padding-left: 30px;
 }
 
 .cuadrosListas>span {
@@ -199,6 +219,11 @@ body::-webkit-scrollbar-thumb{
     gap: 10px;
 }
 
+.tuMusica>div:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .tuMusica .albumNuevo{
     display: flex;
     flex-direction: column;
@@ -224,11 +249,13 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
-    width: 10rem;
+    width: 11rem;
     height: 12rem;
     border-radius: 20px;
     background-color: #0F0F0F;
     gap: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .segundaLinea div>span{
     text-align: center;
@@ -297,3 +324,4 @@ body::-webkit-scrollbar-thumb{
 .espaciado{
     height: 100px;
 }
+
