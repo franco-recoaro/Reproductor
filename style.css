@@ -215,6 +215,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 20px;
     background-color: #0F0F0F;
     gap: 10px;
+    text-align: center;
 }
 
 .tuMusica>div:hover{
