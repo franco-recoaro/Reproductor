@@ -1,1 +1,5 @@
-canciones=[];
+[{
+    "nombre":"Cancion 1",
+    "url":"Url Cancion 1",
+    "artista":"Artista 1"
+}]
