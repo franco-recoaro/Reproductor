@@ -14,19 +14,20 @@
 
 <body>
     <div class="aplicacion">
-
         <!-- MENU COSTADO -->
         <aside class="menu">
-
             <!-- BUSCADOR Y HOME -->
             <div class="inicioBuscador">
                 <img src="./Assets/logo.png" alt="logo" height="100px" width="100px">
                 <div class="botonesInicio">
                     <div class="botonHome">
-                    <button><img class="fotoHome" src="./Assets/white-home-icon-png-8-removebg-preview-removebg-preview.png" width="18px" height="15px">Home</button>
-                </div>
+                        <button><img class="fotoHome"
+                                src="./Assets/white-home-icon-png-8-removebg-preview-removebg-preview.png" width="18px"
+                                height="15px">Home</button>
+                    </div>
                     <div class="barraBuscador">
-                        <img class="fotoLupa" src="./Assets/lupa-removebg-preview-removebg-preview.png" width="18px" height="18px">
+                        <img class="fotoLupa" src="./Assets/lupa-removebg-preview-removebg-preview.png" width="18px"
+                            height="18px">
                         <input placeholder="Buscar..."></input>
                     </div>
                 </div>
@@ -37,9 +38,8 @@
             <div class="biblioteca">
                 <h2>Tu Biblioteca</h2>
 
-                <div class="cuadrosListas">
-                    <img src="./Assets/playlist1.jpg" alt="logo" height="80px"
-                        width="80px">
+                <div id="unico" class="cuadrosListas">
+                    <img src="./Assets/playlist1.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Mi Musica</span>
                         <p>Playlist - Franco Recoaro</p>
@@ -48,8 +48,7 @@
 
 
                 <div class="cuadrosListas">
-                    <img src="./Assets/playlist2.jpg" alt="logo" height="80px"
-                        width="80px">
+                    <img src="./Assets/playlist2.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Para Discoteca</span>
                         <p>Playlist - Franco Recoaro</p>
@@ -58,8 +57,7 @@
 
 
                 <div class="cuadrosListas">
-                    <img src="./Assets/playlist3.jpg" alt="logo" height="80px"
-                        width="80px">
+                    <img src="./Assets/playlist3.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Relajante</span>
                         <p>Playlist - Franco Recoaro</p>
@@ -68,8 +66,7 @@
 
 
                 <div class="cuadrosListas">
-                    <img src="./Assets/playlist4.jpg" alt="logo" height="80px"
-                        width="80px">
+                    <img src="./Assets/playlist4.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Ritmos Latinos</span>
                         <p>Playlist - Franco Recoaro</p>
@@ -79,8 +76,7 @@
 
 
                 <div class="cuadrosListas">
-                    <img src="./Assets/playlist5.jpg" alt="logo" height="80px"
-                        width="80px">
+                    <img src="./Assets/playlist5.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Techno - Electronic</span>
                         <p>Playlist - Franco Recoaro</p>
@@ -90,8 +86,7 @@
 
 
                 <div class="cuadrosListas">
-                    <img src="./Assets/playlist6.jpg" alt="logo" height="80px"
-                        width="80px">
+                    <img src="./Assets/playlist6.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Variado</span>
                         <p>Playlist - Franco Recoaro</p>
@@ -106,26 +101,38 @@
 
 
         <!-- PANTALLA PRINCIPAL -->
-        <div class="main">
-            <h2>Bienvenido, nuevamente</h2>
-            <h4>Nuevos Lanzamientos</h4>
-            <!-- TU MUSICA -->
+        <div class="main" id="main">
+            <div class="barraNav">
+                <div>
+                    <button class="atrasBut"><img src="./Assets/flecha.png" width="50px"></button>
+                </div>
+                <div>
+                    <button class="log">Login</button>
+                    <button class="reg">Sign Up</button>
+                </div>
+            </div>
 
+            <!-- TU MUSICA -->
+            <div id="contenedorPrincipal">
+                <div class="tituloBienvenida">
+                    <h2>Bienvenido, nuevamente</h2>
+                    <h4>Nuevos Lanzamientos</h4>
+                </div>
             <div class="tuMusica">
                 <div>
                     <img src="./Assets/nadiesabebad.jpg" alt="" width="100px" height="100px">
                     <div class="albumNuevo">
-                    <span>
-                        Nadie sabe lo que pas..
-                    </span>
-                    <span>
-                        <i>Bad Bunny</i>
-                    </span>
-                </div>
+                        <span>
+                            Nadie sabe lo que pas..
+                        </span>
+                        <span>
+                            <i>Bad Bunny</i>
+                        </span>
+                    </div>
                     <button id="reproducir" class="botonPlayLista"><img src="./Assets/PLAY.png" alt="" width="30px"
                             height="30px"></button>
                 </div>
-                
+
                 <div>
                     <img src="./Assets/afrolova23.jpg" alt="" width="100px" height="100px">
                     <div class="albumNuevo">
@@ -156,7 +163,7 @@
                     <img src="./Assets/songsofsurrender.jpg" alt="" width="100px" height="100px">
                     <div class="albumNuevo">
                         <span>
-                           Sons of Surrender
+                            Sons of Surrender
                         </span>
                         <span>
                             <i>U2</i>
@@ -169,7 +176,7 @@
                     <img src="./Assets/EADDA.jpg" alt="" width="100px" height="100px">
                     <div class="albumNuevo">
                         <span>
-                        EADDA9223
+                            EADDA9223
                         </span>
                         <span>
                             <i>Fito Paez</i>
@@ -209,7 +216,7 @@
                         </span>
                         <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt="" width="0px"
                                 height="0px"></button>
-                            </div>
+                    </div>
                     <div>
                         <img src="./Assets/battery.jpg" alt="" width="100px" height="80px">
                         <span>
@@ -301,7 +308,7 @@
                         <span>
                             The Unforgiven
                         </span>
-                         <span>
+                        <span>
                             <i>The Black Album</i>
                         </span>
                         <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt="" width="0px"
@@ -385,6 +392,7 @@
 
                 </div>
             </div>
+        </div>
 
             <div class="espaciado">
             </div>
@@ -407,7 +415,8 @@
                 </div>
             </div>
         </div>
-<script type="module" src="" ></script>
+        
+        <script type="module" src="./code.js"></script>
 
 </body>
 

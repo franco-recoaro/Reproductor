@@ -1,2 +1,8 @@
-import canciones from "./canciones.json";
-import playlist from "./playlist.json";
+
+const biblioteca = document.querySelector("contenedorPrincipal");
+const listadoDiv = document.getElementById("unico");
+
+listadoDiv.addEventListener("click", () => {
+  biblioteca.innerHTML =  `<div>
+</div> `;
+})
