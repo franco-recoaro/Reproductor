@@ -1,10 +1,52 @@
-[
-    {"nombre":"nombre","url":"url",""},
-];
-
-
 [{
-    "nombre":"Cancion 1",
-    "url":"Url Cancion 1",
-    "artista":"Artista 1"
-}]
+    "nombre":"Amorfoda",
+    "url": "Url Cancion 1",
+    "artista":"Bad Bunny"
+},
+{
+    "nombre":"Columbia",
+    "url": "Url Cancion 1",
+    "artista":"Quevedo"
+},
+{
+    "nombre":"Its my life",
+    "url": "Url Cancion 1",
+    "artista":"Bon Jovi"
+},
+{
+    "nombre":"Changes",
+    "url": "Url Cancion 1",
+    "artista":"2pac"
+},
+{
+    "nombre":"A tout le monde",
+    "url": "Url Cancion 1",
+    "artista":"Megadeth"
+},{
+    "nombre":"Battery",
+    "url": "Url Cancion 1",
+    "artista":"Metallica"
+},
+{
+    "nombre":"Enter Sadman",
+    "url": "Url Cancion 1",
+    "artista":"Metallica"
+},
+{
+    "nombre":"Sad but true",
+    "url": "Url Cancion 1",
+    "artista":"Metallica"
+},{
+    "nombre":"The unforgiven",
+    "url": "Url Cancion 1",
+    "artista":"Metallica"
+},{
+    "nombre":"Fade to black",
+    "url": "Url Cancion 1",
+    "artista":"Bad Bunny"
+},{
+    "nombre":"Seek & destroy",
+    "url": "Url Cancion 1",
+    "artista":"Metallica"
+}
+]
