@@ -1,114 +1,161 @@
-[{
-    "nombre":"En dormir sin Madrid",
-    "artista":"Milo J",
-    "Listado":[
-        {   
-        "nombre":"Milo J: Bzrp Music Sessions, Vol. 57",
-        "url": "Url Cancion 1"
-        },{
-        "nombre":"Fruto",
-        "url": "Url Cancion 1"
-        },{
-        "nombre":"Penas de Antaño",
-        "url": "Url Cancion 1"
-        },{
-        "nombre":"No soy Eterno",
-        "url": "Url Cancion 1"
-        },{
-        "nombre":"Toy en el Mic",
-        "url": "Url Cancion 1"
-        }]
-    },
+[
+  {
+    "nombre": "Playlist 1",
+    "id": "1",
+    "canciones": [
+      {
+        "nombre": "Amorfoda",
+        "url": "Url Cancion 1",
+        "artista": "Bad Bunny"
+      },
+      {
+        "nombre": "Columbia",
+        "url": "Url Cancion 2",
+        "artista": "Quevedo"
+      },
+      {
+        "nombre": "Un tiempo jajaja",
+        "url": "Url Cancion 1",
+        "artista": "Rels B"
+      },
+      {
+        "nombre": "Milo J: Bzrp Music Sessions, Vol. 57",
+        "url": "Url Cancion 1",
+        "artista": "Milo J"
+      },
+      {
+        "nombre": "Toy en el Mic",
+        "url": "Url Cancion 1",
+        "artista": "Milo J"
+      }
+    ]
+  },
 
+  {
+    "nombre": "Playlist 2",
+    "id": "2",
+    "Listado": [
+      {
+        "nombre": "Battery",
+        "url": "Url Cancion 5",
+        "artista": "Metallica"
+      },
+      {
+        "nombre": "Enter Sadman",
+        "url": "Url Cancion 6",
+        "artista": "Metallica"
+      },
+      {
+        "nombre": "Sad but true",
+        "url": "Url Cancion 7",
+        "artista": "Metallica"
+      },
+      {
+        "nombre": "The unforgiven",
+        "url": "Url Cancion 8",
+        "artista": "Metallica"
+      },
+      {
+        "nombre": "Fade to black",
+        "url": "Url Cancion 9",
+        "artista": "Metallica"
+      }
+    ]
+  },
 
-    {
-        "nombre":"En dormir sin Madrid",
-        "artista":"Milo J",
-        "Listado":[
-            {   
-            "nombre":"Milo J: Bzrp Music Sessions, Vol. 57",
-            "url": "Url Cancion 1"
-            },{
-            "nombre":"Fruto",
-            "url": "Url Cancion 1"
-            },{
-            "nombre":"Penas de Antaño",
-            "url": "Url Cancion 1"
-            },{
-            "nombre":"No soy Eterno",
-            "url": "Url Cancion 1"
-            },{
-            "nombre":"Toy en el Mic",
-            "url": "Url Cancion 1"
-            }]
-        },
-    
-    
-    
-        {
-            "nombre":"En dormir sin Madrid",
-            "artista":"Milo J",
-            "Listado":[
-                {   
-                "nombre":"Milo J: Bzrp Music Sessions, Vol. 57",
-                "url": "Url Cancion 1"
-                },{
-                "nombre":"Fruto",
-                "url": "Url Cancion 1"
-                },{
-                "nombre":"Penas de Antaño",
-                "url": "Url Cancion 1"
-                },{
-                "nombre":"No soy Eterno",
-                "url": "Url Cancion 1"
-                },{
-                "nombre":"Toy en el Mic",
-                "url": "Url Cancion 1"
-                }]
-            },
-        
-        
-        
-            {
-                "nombre":"En dormir sin Madrid",
-                "artista":"Milo J",
-                "Listado":[
-                    {   
-                    "nombre":"Milo J: Bzrp Music Sessions, Vol. 57",
-                    "url": "Url Cancion 1"
-                    },{
-                    "nombre":"Fruto",
-                    "url": "Url Cancion 1"
-                    },{
-                    "nombre":"Penas de Antaño",
-                    "url": "Url Cancion 1"
-                    },{
-                    "nombre":"No soy Eterno",
-                    "url": "Url Cancion 1"
-                    },{
-                    "nombre":"Toy en el Mic",
-                    "url": "Url Cancion 1"
-                    }]
-                }, 
-            
-                {
-                    "nombre":"En dormir sin Madrid",
-                    "artista":"Milo J",
-                    "Listado":[
-                        {   
-                        "nombre":"Milo J: Bzrp Music Sessions, Vol. 57",
-                        "url": "Url Cancion 1"
-                        },{
-                        "nombre":"Fruto",
-                        "url": "Url Cancion 1"
-                        },{
-                        "nombre":"Penas de Antaño",
-                        "url": "Url Cancion 1"
-                        },{
-                        "nombre":"No soy Eterno",
-                        "url": "Url Cancion 1"
-                        },{
-                        "nombre":"Toy en el Mic",
-                        "url": "Url Cancion 1"
-                        }]
-                    }]
+  {
+    "nombre": "Playlist 3",
+    "id": "3",
+    "Listado": [
+      {
+        "nombre": "Changes",
+        "url": "Url Cancion 3",
+        "artista": "2pac"
+      },
+      {
+        "nombre": "A tout le monde",
+        "url": "Url Cancion 4",
+        "artista": "Megadeth"
+      },
+      {
+        "nombre": "Invisible",
+        "url": "Url Cancion 56",
+        "artista": "U2"
+      },
+      {
+        "nombre": "Ordinary Love",
+        "url": "Url Cancion 57",
+        "artista": "U2"
+      },
+      {
+        "nombre": "Stay (Faraway, So Close!)",
+        "url": "Url Cancion 58",
+        "artista": "U2"
+      }
+    ]
+  },
+
+  {
+    "nombre": "Playlist 4",
+    "id": "4",
+    "Listado": [
+      {
+        "nombre": "Russian Strings",
+        "url": "Url Cancion 76",
+        "artista": "Blur"
+      },
+      {
+        "nombre": "The Everglades (For Leonard)",
+        "url": "Url Cancion 77",
+        "artista": "Blur"
+      },
+      {
+        "nombre": "Goodbye Albert",
+        "url": "Url Cancion 78",
+        "artista": "Blur"
+      },
+      {
+        "nombre": "Vertigo",
+        "url": "Url Cancion 60",
+        "artista": "U2"
+      },
+      {
+        "nombre": "City of Blinding Lights",
+        "url": "Url Cancion 61",
+        "artista": "U2"
+      }
+    ]
+  },
+
+  {
+    "nombre": "Playlist 5",
+    "id": "5",
+    "Listado": [
+      {
+        "nombre": "No se si tu no",
+        "url": "Url Cancion 38",
+        "artista": "Rels B"
+      },
+      {
+        "nombre": "Baby BOO",
+        "url": "Url Cancion 39",
+        "artista": "Rels B"
+      },
+      {
+        "nombre": "Media Pastiii",
+        "url": "Url Cancion 40",
+        "artista": "Rels B"
+      },
+      {
+        "nombre": "Fruto",
+        "url": "Url Cancion 42",
+        "artista": "Milo J"
+      },
+      {
+        "nombre": "Penas de Antaño",
+        "url": "Url Cancion 43",
+        "artista": "Milo J"
+      }
+    ]
+  }
+]

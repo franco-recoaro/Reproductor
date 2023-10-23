@@ -5,40 +5,40 @@
 },
 {
     "nombre":"Columbia",
-    "url": "Url Cancion 1",
+    "url": "Url Cancion 2",
     "artista":"Quevedo"
 },
 {
     "nombre":"Changes",
-    "url": "Url Cancion 1",
+    "url": "Url Cancion 3",
     "artista":"2pac"
 },
 {
     "nombre":"A tout le monde",
-    "url": "Url Cancion 1",
+    "url": "Url Cancion 4",
     "artista":"Megadeth"
 },{
     "nombre":"Battery",
-    "url": "Url Cancion 1",
+    "url": "Url Cancion 5",
     "artista":"Metallica"
 },
 {
     "nombre":"Enter Sadman",
-    "url": "Url Cancion 1",
+    "url": "Url Cancion 6",
     "artista":"Metallica"
 },
 {
     "nombre":"Sad but true",
-    "url": "Url Cancion 1",
+    "url": "Url Cancion 7",
     "artista":"Metallica"
 },{
     "nombre":"The unforgiven",
-    "url": "Url Cancion 1",
+    "url": "Url Cancion 8",
     "artista":"Metallica"
 },{
     "nombre":"Fade to black",
-    "url": "Url Cancion 1",
-    "artista":"Bad Bunny"
+    "url": "Url Cancion 9",
+    "artista":"Metallica"
 }
 ]
 
