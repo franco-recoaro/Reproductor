@@ -402,6 +402,18 @@ margin-left: 0px;
     margin: 0px 20px;
 }
 
+.botonesRepro{
+    border-radius: 10px;
+    background-color: #161515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonesRepro>button{
+    background: transparent;
+    border: 0;
+    gap: 1px;
+}
 audio {
     display: none;
 }
