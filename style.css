@@ -418,6 +418,10 @@ audio {
     display: none;
 }
 
+#botonPause{
+    display: none;
+}
+
 .espaciado {
     height: 100px;
 }
