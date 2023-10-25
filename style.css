@@ -301,13 +301,12 @@ margin-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 11rem;
-    height: 12rem;
+    width: 12rem;
+    height: 13rem;
     border-radius: 10px;
     background-color: #0F0F0F;
     gap: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-bottom: 20px;
 }
 
 .segundaLinea div>span {

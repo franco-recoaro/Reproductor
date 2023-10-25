@@ -5,39 +5,43 @@
 },
 {
     "nombre":"Columbia",
-    "url": "Url Cancion 2",
+    "url": "./Songs/Quevedo - Columbia.mp3",
     "artista":"Quevedo"
 },
 {
     "nombre":"Changes",
-    "url": "Url Cancion 3",
+    "url": "./Songs/2Pac - Changes.mp3",
     "artista":"2pac"
 },
 {
     "nombre":"A tout le monde",
-    "url": "Url Cancion 4",
+    "url": "./Songs/Megadeth - A tout le monde.mp3",
     "artista":"Megadeth"
 },{
     "nombre":"Battery",
-    "url": "Url Cancion 5",
+    "url": "./Songs/Metallica - Battery Remastered.mp3",
     "artista":"Metallica"
 },
 {
     "nombre":"Enter Sadman",
-    "url": "Url Cancion 6",
+    "url": "./Songs/Metallica - Enter Sandman Remastered.mp3",
     "artista":"Metallica"
 },
 {
     "nombre":"Sad but true",
-    "url": "Url Cancion 7",
+    "url": "./Songs/Metallica - Sad But True Remastered.mp3",
     "artista":"Metallica"
 },{
     "nombre":"The unforgiven",
-    "url": "Url Cancion 8",
+    "url": "./Songs/Metallica - The Unforgiven Remastered.mp3",
     "artista":"Metallica"
 },{
     "nombre":"Fade to black",
-    "url": "Url Cancion 9",
+    "url": "./Songs/Metallica - Fade To Black Remastered.mp3",
+    "artista":"Metallica"
+},{
+    "nombre":"One",
+    "url": "./Songs/Metallica - One Remastered.mp3",
     "artista":"Metallica"
 }
 ]

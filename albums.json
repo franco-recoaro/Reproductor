@@ -4,70 +4,70 @@
     "Listado": [
     {
         "nombre":"NADIE SABE",
-        "url": "Url Cancion 10"
+        "url": "./Songs/Bad Bunny - NADIE SABE.mp3"
     },{
         "nombre":"MONACO",
-        "url": "Url Cancion 11"
+        "url": "./Songs/Bad Bunny - MONACO.mp3"
     },{
         "nombre":"FINA",
-        "url": "Url Cancion 12"
+        "url": "./Songs/Bad Bunny - FINA.mp3"
     },{
         "nombre":"HIBIKI",
-        "url": "Url Cancion 13"
+        "url": "./Songs/Bad Bunny - HIBIKI.mp3"
     },{
         "nombre":"MR. OCTOBER",
-        "url": "Url Cancion 14"
+        "url": "./Songs/Bad Bunny - MR OCTOBER.mp3"
     },{
         "nombre":"CYBERTRUCK",
-        "url": "Url Cancion 15"
+        "url": "./Songs/Bad Bunny - CYBERTRUCK.mp3"
     },{
         "nombre":"VOU 787",
-        "url": "Url Cancion 16"
+        "url": "./Songs/Bad Bunny -  VOU 787.mp3"
     },{
         "nombre":"SEDA",
-        "url": "Url Cancion 17"
+        "url": "./Songs/Bad Bunny -  SEDA.mp3"
     },{
         "nombre":"GRACIAS POR NADA",
-        "url": "Url Cancion 18"
+        "url": "./Songs/Bad Bunny - GRACIAS POR NADA.mp3"
     },{
         "nombre":"TELEFONO NUEVO",
-        "url": "Url Cancion 19"
+        "url": "./Songs/Bad Bunny - TELEFONO NUEVO.mp3"
     },{
         "nombre":"BABY NUEVA",
-        "url": "Url Cancion 20"
+        "url": "./Songs/Bad Bunny - BABY NUEVA.mp3"
     },{
         "nombre":"MERCEDES CAROTA",
-        "url": "Url Cancion 21"
+        "url": "./Songs/Bad Bunny -  MERCEDES CAROTA.mp3"
     },{
         "nombre":"LOS PITS",
-        "url": "Url Cancion 22"
+        "url": "./Songs/Bad Bunny -  LOS PITS.mp3"
     },{
         "nombre":"VUELVE CANDY B",
-        "url": "Url Cancion 23"
+        "url": "./Songs/Bad Bunny - VUELVE CANDY B.mp3"
     },{
         "nombre":"BATICANO",
-        "url": "Url Cancion 24"
+        "url": "./Songs/Bad Bunny - BATICANO.mp3"
     },{
         "nombre":"NO ME QUIERO CASAR",
-        "url": "Url Cancion 25"
+        "url": "./Songs/Bad Bunny - NO ME QUIERO CASAR.mp3"
     },{
         "nombre":"WHERE SHE GOES",
-        "url": "Url Cancion 26"
+        "url": "./Songs/Bad Bunny -  WHERE SHE GOES.mp3"
     },{
         "nombre":"THUNDER Y LIGHTNING",
-        "url": "Url Cancion 27"
+        "url": "./Songs/Bad Bunny - THUNDER Y LIGHTNING.mp3"
     },{
         "nombre":"PERRO NEGRO",
-        "url": "Url Cancion 28"
+        "url": "./Songs/Bad Bunny - PERRO NEGRO.mp3"
     },{
         "nombre":"EUROPA :(",
-        "url": "Url Cancion 29"
+        "url": "./Songs/Bad Bunny - EUROPA.mp3"
     },{
         "nombre":"ACHO PR",
-        "url": "Url Cancion 30"
+        "url": "./Songs/Bad Bunny - ACHO PR.mp3"
     },{
         "nombre":"UN PREVIEW",
-        "url": "Url Cancion 31"
+        "url": "./Songs/Bad Bunny -  UN PREVIEW.mp3"
     }]
 },
 
@@ -78,31 +78,31 @@
     "Listado":[
         {
         "nombre":"Un tiempo jajaja",
-        "url": "Url Cancion 32"
+        "url": "./Songs/Rels B - Un tiempo jajaja.mp3"
         },{
         "nombre":"Solita y SueltAAA",
-        "url": "Url Cancion 33"
+        "url": "./Songs/Rels B - Solita y SueltAAA.mp3"
         },{
         "nombre":"AfroLOVA'",
-        "url": "Url Cancion 34"
+        "url": "./Songs/Rels B - AfroLOVA.mp3"
         },{
         "nombre":"Un Rodeoooo",
-        "url": "Url Cancion 35"
+        "url": "./Songs/Rels B - Un Rodeoooo.mp3"
         },{
         "nombre":"Sin Gato(MIAU!)",
-        "url": "Url Cancion 36"
+        "url": "./Songs/Rels B - Sin Gato MIAU.mp3"
         }, {
         "nombre":"SONRÍE <3",
-        "url": "Url Cancion 37"
+        "url": "./Songs/Rels B - SONRÍE.mp3"
         },{
         "nombre":"No se si tu no",
-        "url": "Url Cancion 38"
+        "url": "./Songs/Rels B - No Se Si Tu No.mp3"
         },{
         "nombre":"Baby BOO",
-        "url": "Url Cancion 39"
+        "url": "./Songs/Rels B - baby BOO.mp3"
         },{
         "nombre":"Media Pastiii",
-        "url": "Url Cancion 40"
+        "url": "./Songs/Rels B - Media Pastiii.mp3"
         }]
     },
 
@@ -113,19 +113,19 @@
     "Listado":[
         {   
         "nombre":"Milo J: Bzrp Music Sessions, Vol. 57",
-        "url": "Url Cancion 41"
+        "url": "./Songs/MILO J - Milo J Bzrp Music Sessions Vol 57.mp3"
         },{
         "nombre":"Fruto",
-        "url": "Url Cancion 42"
+        "url": "./Songs/MILO J - Fruto.mp3"
         },{
         "nombre":"Penas de Antaño",
-        "url": "Url Cancion 43"
+        "url": "./Songs/MILO J - Penas de Antaño.mp3"
         },{
         "nombre":"No soy Eterno",
-        "url": "Url Cancion 44"
+        "url": "./Songs/MILO J - No soy Eterno.mp3"
         },{
         "nombre":"Toy en el Mic",
-        "url": "Url Cancion 45"
+        "url": "./Songs/MILO J - Toy en el Mic.mp3"
         }]
     },
 
@@ -136,54 +136,54 @@
     "Listado": [
         {
         "nombre":"If God Will Send His Angels",
-        "url": "Url Cancion 46"
+        "url": "./Songs/U2 - If God Will Send His Angels.mp3"
         },{
         "nombre":"Stories for Boys",
-        "url": "Url Cancion 47"
+        "url": "./Songs/U2 - Stories For Boys.mp3"
         },
         {
         "nombre":"One",
-        "url": "Url Cancion 48"
+        "url": "./Songs/U2 - One.mp3"
         },
         {
         "nombre":"Where the Streets Have No Name",
-        "url": "Url Cancion 49"
+        "url": "./Songs/U2 - Where The Streets Have No Name.mp3"
         },{
         "nombre":"“40”",
-        "url": "Url Cancion 50"
+        "url": "./Songs/U2 -  40.mp3"
         },{
         "nombre":"Walk On (Ukraine)",
-        "url": "Url Cancion 51"
+        "url": "./Songs/U2 - Walk On Ukraine.mp3"
         },{
         "nombre":"I Will Follow",
-        "url": "Url Cancion 52"
+        "url": "./Songs/U2 - I Will Follow.mp3"
         },{
         "nombre":"The Fly",
-        "url": "Url Cancion 53"
+        "url": "./Songs/U2 - The Fly.mp3"
         },{
         "nombre":"I Still Haven’t Found What I’m Looking For",
-        "url": "Url Cancion 54"
+        "url": "./Songs/U2 -  I Still Havent Found What Im Looking For.mp3"
         },{
         "nombre":"Sunday Bloody Sunday",
-        "url": "Url Cancion 55"
+        "url": "./Songs/U2 - Sunday Bloody Sunday.mp3"
         },{
         "nombre":"Invisible",
-        "url": "Url Cancion 56"
+        "url": "./Songs/U2 - Invisible.mp3"
         },{
         "nombre":"Ordinary Love",
-        "url": "Url Cancion 57"
+        "url": "./Songs/U2 - Ordinary Love.mp3"
         },{
         "nombre":"Stay (Faraway, So Close!)",
-        "url": "Url Cancion 58"
+        "url": "./Songs/U2 -  Stay Faraway So Close.mp3"
         },{
         "nombre":"Pride (In the Name of Love)",
-        "url": "Url Cancion 59"
+        "url": "./Songs/U2 -  Pride In The Name Of Love.mp3"
         },{
         "nombre":"Vertigo",
-        "url": "Url Cancion 60"
+        "url": "./Songs/U2 - Vertigo.mp3"
         },{
         "nombre":"City of Blinding Lights",
-        "url": "Url Cancion 61"
+        "url": "./Songs/U2 - City Of Blinding Lights.mp3    "
         }]
     },
 
@@ -194,46 +194,46 @@
     "Listado": [
             {
             "nombre":"Brillante Sobre el Mic",
-            "url": "Url Cancion 62"
+            "url": "./Songs/FITO PAEZ -  Brillante Sobre el Mic  EADDA9223.mp3"
             },{
             "nombre":"Tráfico por Katmandú",
-            "url": "Url Cancion 63"
+            "url": "./Songs/FITO PAEZ - Tráfico por Katmandú  EADDA9223.mp3"
             },{
             "nombre":"Dos Días en la Vida",
-            "url": "Url Cancion 64"
+            "url": "./Songs/FITO PAEZ - Dos Días en la Vida  EADDA9223.mp3"
             },{
             "nombre":"La Balada de Donna Helena",
-            "url": "Url Cancion 65"
+            "url": "./Songs/FITO PAEZ -  La Balada de Donna Helena  EADDA9223.mp3"
             },{
             "nombre":"Sasha, Sissi y el Círculo de Baba",
-            "url": "Url Cancion 66"
+            "url": "./Songs/FITO PAEZ -  Sasha Sissi y el Círculo de Baba  EADDA9223.mp3"
             },{
             "nombre":"Tumbas de la Gloria",
-            "url": "Url Cancion 67"
+            "url": "./Songs/FITO PAEZ - Tumbas de la Gloria  EADDA9223.mp3"
             },{
             "nombre":"Detrás del Muro de los Lamentos",
-            "url": "Url Cancion 68"
+            "url": "./Songs/FITO PAEZ - Detrás del Muro de los Lamentos  EADDA9223.mp3"
             },{
             "nombre":"La Rueda Mágica",
-            "url": "Url Cancion 69"
+            "url": "./Songs/FITO PAEZ - La Rueda Mágica  EADDA9223.mp3"
             },{
             "nombre":"El Amor Después del Amor",
-            "url": "Url Cancion 70"
+            "url": "./Songs/FITO PAEZ -  El Amor Después del Amor  EADDA9223.mp3"
             },{
             "nombre":"Un Vestido y un Amor",
-            "url": "Url Cancion 71"
+            "url": "./Songs/FITO PAEZ - Un Vestido y un Amor  EADDA9223.mp3"
             },{
             "nombre":"La Verónica",
-            "url": "Url Cancion 72"
+            "url": "./Songs/FITO PAEZ -  La Verónica  EADDA9223.mp3"
             },{
             "nombre":"Pétalo de Sal",
-            "url": "Url Cancion 73"
+            "url": "./Songs/FITO PAEZ - Pétalo de Sal  EADDA9223.mp3"
             },{
             "nombre":"A Rodar Mi Vida",
-            "url": "Url Cancion 74"
+            "url": "./Songs/FITO PAEZ - A Rodar Mi Vida.mp3"
             },{
             "nombre":"Creo",
-            "url": "Url Cancion 75"
+            "url": "./Songs/FITO PAEZ -  Creo  EADDA9223.mp3"
         }]
     },
 
@@ -244,34 +244,34 @@
     "Listado":[
             {
                 "nombre":"Russian Strings",
-                "url": "Url Cancion 76"
+                "url": "./Songs/BLUR - Russian Strings.mp3"
             },{
                 "nombre":"The Everglades (For Leonard)",
-                "url": "Url Cancion 77"
+                "url": "./Songs/BLUR - The Everglades For Leonard.mp3"
             },{
                 "nombre":"Goodbye Albert",
-                "url": "Url Cancion 78"
+                "url": "./Songs/BLUR - Goodbye Albert.mp3"
             },{
                 "nombre":"The Heights",
-                "url": "Url Cancion 79"
+                "url": "./Songs/BLUR - The Heights.mp3"
             },{
                 "nombre":"St. Charles Square",
-                "url": "Url Cancion 80"
+                "url": "./Songs/BLUR - St Charles Square.mp3"
             },{
                 "nombre":"The Ballad",
-                "url": "Url Cancion 81"
+                "url": "./Songs/BLUR - The Ballad.mp3"
             },{
                 "nombre":"Far Away Island",
-                "url": "Url Cancion 82"
+                "url": "./Songs/BLUR - Far Away Island.mp3"
             },{
                 "nombre":"Barbaric",
-                "url": "Url Cancion 83"
+                "url": "./Songs/BLUR - Barbaric.mp3"
             },{
                 "nombre":"The Narcissist",
-                "url": "Url Cancion 84"
+                "url": "./Songs/BLUR - The Narcissist.mp3"
             },{
                 "nombre":"Avalon",
-                "url": "Url Cancion 85"
+                "url": "./Songs/BLUR - Avalon.mp3"
             }]
         }
 

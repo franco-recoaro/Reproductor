@@ -1,19 +1,7 @@
-let canciones = [{
+import canciones from "./canciones.json" assert { type: "json" };
+import albums from "./albums.json" assert { type: "json" };
+import playlist from "./playlist.json" assert { type: "json" };
 
-  nombre:"Amorfoda",
-  url: "./Bad Bunny - Amorfoda.mp3",
-  artista:"Bad Bunny"
-},
-{
-  nombre:"Columbia",
-  url: "Url Cancion 2",
-  artista:"Quevedo"
-},
-{
-  nombre:"Changes",
-  url: "Url Cancion 3",
-  artista:"2pac"
-}]
 
 const botonReproducir = document.querySelectorAll("#reproducir");
 const reproductorMusica = document.querySelector("audio");
@@ -45,5 +33,5 @@ botonReproducir.forEach(boton => {
     }
     }
   } )
-})
+});
 
