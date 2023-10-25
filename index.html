@@ -38,7 +38,7 @@
             <div class="biblioteca">
                 <h2>Tu Biblioteca</h2>
 
-                <div id="unico" class="cuadrosListas">
+                <div id="listasReproduccion" class="cuadrosListas">
                     <img src="./Assets/playlist1.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Mi Musica</span>
@@ -47,7 +47,7 @@
                 </div>
 
 
-                <div class="cuadrosListas">
+                <div id="listasReproduccion" class="cuadrosListas">
                     <img src="./Assets/playlist2.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Para Discoteca</span>
@@ -56,7 +56,7 @@
                 </div>
 
 
-                <div class="cuadrosListas">
+                <div id="listasReproduccion" class="cuadrosListas">
                     <img src="./Assets/playlist3.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Relajante</span>
@@ -65,7 +65,7 @@
                 </div>
 
 
-                <div class="cuadrosListas">
+                <div id="listasReproduccion" class="cuadrosListas" >
                     <img src="./Assets/playlist4.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Ritmos Latinos</span>
@@ -75,7 +75,7 @@
 
 
 
-                <div class="cuadrosListas">
+                <div id="listasReproduccion" class="cuadrosListas">
                     <img src="./Assets/playlist5.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Techno - Electronic</span>
@@ -85,7 +85,7 @@
 
 
 
-                <div class="cuadrosListas">
+                <div id="listasReproduccion" class="cuadrosListas">
                     <img src="./Assets/playlist6.jpg" alt="logo" height="80px" width="80px">
                     <div class="listasIndividuales">
                         <span>Variado</span>
@@ -99,6 +99,7 @@
             </div>
         </aside>
 
+        <div id="musicList"></div>
 
         <!-- PANTALLA PRINCIPAL -->
         <div class="main" id="main">
@@ -118,6 +119,8 @@
                     <h2>Bienvenido, nuevamente</h2>
                     <h4>Nuevos Lanzamientos</h4>
                 </div>
+
+
                 <div class="tuMusica">
                     <div>
                         <img src="./Assets/nadiesabebad.jpg" alt="" width="100px" height="100px">
@@ -129,7 +132,7 @@
                                 <i>Bad Bunny</i>
                             </span>
                         </div>
-                        <button id="reproducir" class="botonPlayLista"><img src="./Assets/PLAY.png" alt="" width="30px"
+                        <button id="listasReproduccion" class="botonPlayLista"><img src="./Assets/PLAY.png" alt="" width="30px"
                                 height="30px"></button>
                     </div>
 
@@ -143,7 +146,7 @@
                                 <i>Rels B</i>
                             </span>
                         </div>
-                        <button id="reproducir" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt="" width="30px"
+                        <button id="listasReproduccion" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt="" width="30px"
                                 height="30px"></button>
                     </div>
                     <div>
@@ -156,7 +159,7 @@
                                 <i>Milo J</i>
                             </span>
                         </div>
-                        <button id="reproducir" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt="" width="30px"
+                        <button id="listasReproduccion" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt="" width="30px"
                                 height="30px"></button>
                     </div>
                     <div>
@@ -169,7 +172,7 @@
                                 <i>U2</i>
                             </span>
                         </div>
-                        <button id="reproducir" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt=""
+                        <button id="listasReproduccion" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt=""
                                 width=" 30px" height="30px"></button>
                     </div>
                     <div>
@@ -182,7 +185,7 @@
                                 <i>Fito Paez</i>
                             </span>
                         </div>
-                        <button id="reproducir" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt="" width="30px"
+                        <button id="listasReproduccion" class="botonPlayLista"> <img src="./Assets/PLAY.png" alt="" width="30px"
                                 height="30px"></button>
                     </div>
                     <div>
@@ -195,7 +198,7 @@
                                 <i>Blur</i>
                             </span>
                         </div>
-                        <button id="reproducir" class="botonPlayLista">
+                        <button id="listasReproduccion" class="botonPlayLista">
                             <img src="./Assets/PLAY.png" alt="" width="30px" height="30px">
                         </button>
                     </div>
@@ -207,7 +210,7 @@
                 <div class="listasRecomendadas">
                     <div class="segundaLinea">
                         <div>
-                            <img src="./Assets/amorfoda.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/amorfoda.jpg" alt="" width="130px" height="100px">
                             <span>
                                 Amorfoda
                             </span>
@@ -218,7 +221,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/battery.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/battery.jpg" alt="" width="130px" height="100px">
                             <span>
                                 Battery
                             </span>
@@ -229,7 +232,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/atoutlemonde.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/atoutlemonde.jpg" alt="" width="130px" height="100px">
                             <span>
                                 A tout le monde
                             </span>
@@ -240,7 +243,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/columbia.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/columbia.jpg" alt="" width="130px" height="100px">
                             <span>
                                 Columbia
                             </span>
@@ -251,7 +254,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/2pac.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/2pac.jpg" alt="" width="130px" height="100px">
                             <span>
                                 Changes
                             </span>
@@ -273,7 +276,7 @@
                 <div class="listasRecomendadas">
                     <div class="segundaLinea">
                         <div>
-                            <img src="./Assets/BLACK ALBUM.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/BLACK ALBUM.jpg" alt="" width="130px" height="100px">
                             <span>
                                 Enter Sadman
                             </span>
@@ -284,7 +287,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/andjustice.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/andjustice.jpg" alt="" width="130px" height="100px">
                             <span>
                                 One
                             </span>
@@ -295,7 +298,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/BLACK ALBUM.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/BLACK ALBUM.jpg" alt="" width="130px" height="100px">
                             <span>
                                 Sad but True
                             </span>
@@ -306,7 +309,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/BLACK ALBUM.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/BLACK ALBUM.jpg" alt="" width="130px" height="100px">
                             <span>
                                 The Unforgiven
                             </span>
@@ -317,7 +320,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/RIDETHELIGHTNING.jpg" alt="" width="150px" height="120px">
+                            <img src="./Assets/RIDETHELIGHTNING.jpg" alt="" width="130px" height="100px">
                             <span>
                                 Fade To Black
                             </span>
@@ -339,7 +342,7 @@
                 <div class="listasRecomendadas">
                     <div class="segundaLinea">
                         <div>
-                            <img src="./Assets/CAJANEGRA.png" alt="" width="150px" height="120px">
+                            <img src="./Assets/CAJANEGRA.png" alt="" width="130px" height="100px">
                             <span>
                                 Caja Negra
                             </span>
@@ -350,7 +353,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/Historiasinnecesarias.png" alt="" width="150px" height="120px">
+                            <img src="./Assets/Historiasinnecesarias.png" alt="" width="130px" height="100px">
                             <span>
                                 Historias Innecesarias
                             </span>
@@ -361,7 +364,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/Relatos Historias de Crimenes.png" alt="" width="150px" height="120px">
+                            <img src="./Assets/Relatos Historias de Crimenes.png" alt="" width="130px" height="100px">
                             <span>
                                 Relatos: Historias de Crimenes
                             </span>
@@ -372,7 +375,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/TED EN ESPAÑOL.png" alt="" width="150px" height="120px">
+                            <img src="./Assets/TED EN ESPAÑOL.png" alt="" width="130px" height="100px">
                             <span>
                                 TED en español
                             </span>
@@ -383,7 +386,7 @@
                                     width="0px" height="0px"></button>
                         </div>
                         <div>
-                            <img src="./Assets/RELATOSDELANOCHE.png" alt="" width="150px" height="120px">
+                            <img src="./Assets/RELATOSDELANOCHE.png" alt="" width="130px" height="100px">
                             <span>
                                 Relatos de la noche
                             </span>
@@ -406,10 +409,8 @@
         <div class="player">
             <div class="contenedorReproductor">
 
-                <div>
-                    <h3>
-                        Cancion
-                    </h3>
+                <div id="nombreCancionReproducida">
+
                 </div>
 
                 <div class="botonesRepro">
