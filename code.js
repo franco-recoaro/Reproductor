@@ -10,7 +10,10 @@ const botonPause = document.querySelector("#botonPause")
 const botonNext = document.querySelector("#botonNext")
 const botonStop = document.querySelector("#botonStop")
 const botonBack = document.querySelector("#botonBack")
+const botonVolMin = document.querySelector("#botonVolumMin")
+const botonVolMax = document.querySelector("#botonVolumMax")
 const nombreCancionReproducida = document.querySelector("#nombreCancionReproducida")
+const contenedorPrincipal = document.querySelector("#contenedorPrincipal")
 
 /*************FUNCIONALIDADES REPRODUCTOR*************/
 
@@ -42,6 +45,7 @@ botonReproducir.forEach(boton => {
       {
         reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
         reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
+        reproductorMusica.volume = 0.5; // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
         botonPlay.style.display = "none";
         botonPause.style.display = "block";
         crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //El span creado cambia su contenido de texto dependiendo la cancion pasada al elemento audio. El objeto cancion toma como dato el nombre de la cancion y el nombre del artista.
@@ -84,18 +88,40 @@ botonPlay.addEventListener("click", () => { //Evento boton play para que se repr
 }
 );
 
+//funcion que cuando aprete click, adelante 5 seg la cancion
 botonNext.addEventListener("click", () => {
   reproductorMusica.currentTime += 5; //.currenTime es la propiedad que me marca el tiempo actual de la cancion
 }
 );
 
+//funcion que cuando aprete click, atrase 5 seg la cancion
 botonBack.addEventListener("click", () => {
   if (reproductorMusica.currentTime >= 6) {
     reproductorMusica.currentTime -= 5
   }
 });
 
+//Funcion que cada vez que toquemos en sumar volumen se sume de a 10%
+botonVolMax.addEventListener("click", () => {
+  reproductorMusica.volume += 0.1; //.volume es la propiedad que me marca el volumen del reprodructor 
+});
+
+//Funcion que cada vez que toquemos en sumar volumen se baje de a 10% y que funcione cuando minimo este al 10%
+botonVolMin.addEventListener("click", () => {
+  if (reproductorMusica.volume >= 0.1) {
+    reproductorMusica.volume -= 0.1
+  }
+});
+
+
 /**************RENDERIZADO DE PLAYLIST*********************/
 
 const listasReproduccion = document.querySelector("#listasReproduccion");
 const divRenderizarListas = document.querySelector("#musicList");
+
+
+listasReproduccion.addEventListener("click", () => {
+  contenedorPrincipal.style.display = "none"
+  listasReproduccion.appendChild(crearSpan);
+}
+)

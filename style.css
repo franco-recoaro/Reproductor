@@ -107,6 +107,15 @@ body::-webkit-scrollbar-thumb {
     margin-left: 10px;
 }
 
+.botonHome a{
+    text-decoration: none;
+}
+
+.botonHome a:visited{
+    text-decoration: none;
+    color: white;
+}
+
 .fotoHome {
     margin-right: 15px;
 }
