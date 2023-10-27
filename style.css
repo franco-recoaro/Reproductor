@@ -303,25 +303,23 @@ margin-left: 0px;
     height: 190px;
 }
 
-.segundaLinea {
+.segundaLinea{
     display: flex;
-    justify-content: space-around;
     flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 .segundaLinea>div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 10rem;
-    height: 13rem;
     border-radius: 10px;
     background-color: #0F0F0F;
-    gap: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
+    height: 12rem;
+    width: 10rem;
 }
 
 .segundaLinea div>span {
@@ -329,7 +327,8 @@ margin-left: 0px;
 }
 
 .segundaLinea>div>img {
-    margin-top: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .segundaLinea>div:hover {
@@ -396,6 +395,8 @@ margin-left: 0px;
 
 }
 
+
+
 /* PLAYER */
 
 .player {
@@ -443,3 +444,35 @@ audio {
 #nombreCancionReproducida{
     width: 200px;
 }
+
+.barraVolume {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #7a2fa9;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-right: 10px;
+  }
+  
+  .barraVolume:hover {
+    opacity: 1;
+  }
+  
+  .barraVolume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #7a2fa9;
+    cursor: pointer;
+    box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+    background: url(https://www.flaticon.com/svg/vstatic/svg/59/59089.svg?token=exp=1614064733~hmac=a6f0cce2214fdb52e7df9eec24006427) white;
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

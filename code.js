@@ -10,10 +10,8 @@ const botonPause = document.querySelector("#botonPause")
 const botonNext = document.querySelector("#botonNext")
 const botonStop = document.querySelector("#botonStop")
 const botonBack = document.querySelector("#botonBack")
-const botonVolMin = document.querySelector("#botonVolumMin")
-const botonVolMax = document.querySelector("#botonVolumMax")
+const volume = document.querySelector("#volume-control");
 const nombreCancionReproducida = document.querySelector("#nombreCancionReproducida")
-const contenedorPrincipal = document.querySelector("#contenedorPrincipal")
 
 /*************FUNCIONALIDADES REPRODUCTOR*************/
 
@@ -45,7 +43,7 @@ botonReproducir.forEach(boton => {
       {
         reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
         reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
-        reproductorMusica.volume = 0.5; // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
+        reproductorMusica.volume = 0.5;  // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
         botonPlay.style.display = "none";
         botonPause.style.display = "block";
         crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //El span creado cambia su contenido de texto dependiendo la cancion pasada al elemento audio. El objeto cancion toma como dato el nombre de la cancion y el nombre del artista.
@@ -101,27 +99,37 @@ botonBack.addEventListener("click", () => {
   }
 });
 
-//Funcion que cada vez que toquemos en sumar volumen se sume de a 10%
-botonVolMax.addEventListener("click", () => {
-  reproductorMusica.volume += 0.1; //.volume es la propiedad que me marca el volumen del reprodructor 
-});
+volume.addEventListener("change", (ev) => {
+reproductorMusica.volume = ev.currentTarget.value / 100;
+console.log(reproductorMusica.volume);
+})
 
-//Funcion que cada vez que toquemos en sumar volumen se baje de a 10% y que funcione cuando minimo este al 10%
-botonVolMin.addEventListener("click", () => {
-  if (reproductorMusica.volume >= 0.1) {
-    reproductorMusica.volume -= 0.1
-  }
-});
 
 
 /**************RENDERIZADO DE PLAYLIST*********************/
-
+const contenedorPrincipal = document.querySelector("#contenedorPrincipal")
+const contenedorListas = document.querySelector("#musicList")
 const listasReproduccion = document.querySelector("#listasReproduccion");
-const divRenderizarListas = document.querySelector("#musicList");
+let crearSpanListas = document.createElement("span");
 
 
-listasReproduccion.addEventListener("click", () => {
+listasReproduccion.forEach( botonPlaylist => {  
+botonPlaylist.addEventListener("click", () => {
   contenedorPrincipal.style.display = "none"
-  listasReproduccion.appendChild(crearSpan);
-}
-)
+  contenedorListas.appendChild(crearSpanListas);
+})
+});
+
+
+/*******************BOTON ATRAS*****************************/
+
+
+
+
+/*******************INPUT BUSCAR CANCION********************/
+
+
+
+/*****************PASAR DE CANCION ***********************/
+
+

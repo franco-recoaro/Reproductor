@@ -99,7 +99,6 @@
             </div>
         </aside>
 
-        <div id="musicList"></div>
 
         <!-- PANTALLA PRINCIPAL -->
         <div class="main" id="main">
@@ -114,6 +113,8 @@
             </div>
 
             <!-- TU MUSICA -->
+            <div id="musicList"></div>
+
             <div id="contenedorPrincipal">
                 <div class="tituloBienvenida">
                     <h2>Bienvenido, nuevamente</h2>
@@ -264,11 +265,22 @@
                             <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt=""
                                     width="0px" height="0px"></button>
                         </div>
+                        <div>
+                            <img src="./Assets/2pac.jpg" alt="" width="130px" height="100px">
+                            <span>
+                                Changes
+                            </span>
+                            <span>
+                                2Pac
+                            </span>
+                            <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt=""
+                                    width="0px" height="0px"></button>
+                        </div>
 
                     </div>
                 </div>
 
-                <div>
+                <div class="tituloElegiste">
                     <h4>Porque elegiste Metallica</h4>
                 </div>
 
@@ -330,11 +342,22 @@
                             <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt=""
                                     width="0px" height="0px"></button>
                         </div>
+                        <div>
+                            <img src="./Assets/RIDETHELIGHTNING.jpg" alt="" width="130px" height="100px">
+                            <span>
+                                Fade To Black
+                            </span>
+                            <span>
+                                <i>Ride the Lightning</i>
+                            </span>
+                            <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt=""
+                                    width="0px" height="0px"></button>
+                        </div>
 
                     </div>
                 </div>
 
-                <div>
+                <div class="tituloPodcast">
                     <h4>Los mejores podcast</h4>
                 </div>
 
@@ -396,6 +419,17 @@
                             <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt=""
                                     width="0px" height="0px"></button>
                         </div>
+                        <div>
+                            <img src="./Assets/RELATOSDELANOCHE.png" alt="" width="130px" height="100px">
+                            <span>
+                                Relatos de la noche
+                            </span>
+                            <span>
+                                <i>Sonoro | RDLN</i>
+                            </span>
+                            <button id="reproducir" class="botonPlayLista2"><img src="./Assets/PLAY.png" alt=""
+                                    width="0px" height="0px"></button>
+                        </div>
 
                     </div>
                 </div>
@@ -414,8 +448,6 @@
                 </div>
 
                 <div class="botonesRepro">
-                    <button id="botonVolumMin"><img src="./Assets/volumeMin.png" alt=""  width="50px"
-                        height="50px"></button>
                     <button id="botonBack"><img src="./Assets/BACK_REPRO-removebg-preview.png" width="50px"
                             height="50px"></button>
                     <button id="botonPause"><img src="./Assets/PAUSE_REPRO-removebg-preview.png" width="50px"
@@ -425,13 +457,11 @@
                     <button id="botonStop"><img src="./Assets/stop.png" alt="" width="50px" height="50px"></button>
                     <button id="botonNext"><img src="./Assets/NEXT_REPRO-removebg-preview.png" width="50px"
                             height="50px"></button>
-                    <button id="botonVolumMax"><img src="./Assets/volumeMax.png" alt=""  width="50px"
-                        height="50px"></button>
                     <audio src="#" controls></audio>
                 </div>
 
-                <div>
-                    <h3>Usuario</h3>
+                <div class="barraSonido">
+                    <input class="barraVolume" type="range" id="volume-control">
                 </div>
 
             </div>
