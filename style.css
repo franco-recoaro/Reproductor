@@ -306,7 +306,7 @@ margin-left: 0px;
 .segundaLinea{
     display: flex;
     flex-wrap: nowrap;
-    gap: 15px;
+    gap: 35px;
     justify-content: center;
     align-items: center;
 }

@@ -1,11 +1,11 @@
 [
   {
-    "nombre": "Playlist 1",
+    "nombre": "Mi Musica",
     "id": "1",
-    "canciones": [
+    "Listados": [
       {
         "nombre": "Amorfoda",
-        "url": "Url Cancion 1",
+        "url": "./Songs/Bad Bunny - Amorfoda.mp3",
         "artista": "Bad Bunny"
       },
       {
@@ -32,9 +32,9 @@
   },
 
   {
-    "nombre": "Playlist 2",
+    "nombre": "Para Discoteca",
     "id": "2",
-    "Listado": [
+    "Listados": [
       {
         "nombre": "Battery",
         "url": "Url Cancion 5",
@@ -64,9 +64,9 @@
   },
 
   {
-    "nombre": "Playlist 3",
+    "nombre": "Relajante",
     "id": "3",
-    "Listado": [
+    "Listados": [
       {
         "nombre": "Changes",
         "url": "Url Cancion 3",
@@ -96,9 +96,9 @@
   },
 
   {
-    "nombre": "Playlist 4",
+    "nombre": "Ritmos Latinos",
     "id": "4",
-    "Listado": [
+    "Listados": [
       {
         "nombre": "Russian Strings",
         "url": "Url Cancion 76",
@@ -128,9 +128,9 @@
   },
 
   {
-    "nombre": "Playlist 5",
+    "nombre": "Techno - Electronic",
     "id": "5",
-    "Listado": [
+    "Listados": [
       {
         "nombre": "No se si tu no",
         "url": "Url Cancion 38",
