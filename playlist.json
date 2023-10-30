@@ -10,22 +10,22 @@
       },
       {
         "nombre": "Columbia",
-        "url": "Url Cancion 2",
+        "url": "./Songs/Quevedo - Columbia.mp3",
         "artista": "Quevedo"
       },
       {
         "nombre": "Un tiempo jajaja",
-        "url": "Url Cancion 1",
+        "url": "./Songs/Rels B - Un tiempo jajaja.mp3",
         "artista": "Rels B"
       },
       {
         "nombre": "Milo J: Bzrp Music Sessions, Vol. 57",
-        "url": "Url Cancion 1",
+        "url": "./Songs/MILO J - Milo J Bzrp Music Sessions Vol 57.mp3",
         "artista": "Milo J"
       },
       {
         "nombre": "Toy en el Mic",
-        "url": "Url Cancion 1",
+        "url": "./Songs/MILO J - Toy en el Mic.mp3",
         "artista": "Milo J"
       }
     ]
@@ -37,27 +37,27 @@
     "Listados": [
       {
         "nombre": "Battery",
-        "url": "Url Cancion 5",
+        "url": "./Songs/Metallica - Battery Remastered.mp3",
         "artista": "Metallica"
       },
       {
         "nombre": "Enter Sadman",
-        "url": "Url Cancion 6",
+        "url": "./Songs/Metallica - Enter Sandman Remastered.mp3",
         "artista": "Metallica"
       },
       {
         "nombre": "Sad but true",
-        "url": "Url Cancion 7",
+        "url": "./Songs/Metallica - Sad But True Remastered.mp3",
         "artista": "Metallica"
       },
       {
         "nombre": "The unforgiven",
-        "url": "Url Cancion 8",
+        "url": "./Songs/Metallica - The Unforgiven Remastered.mp3",
         "artista": "Metallica"
       },
       {
         "nombre": "Fade to black",
-        "url": "Url Cancion 9",
+        "url": "./Songs/Metallica - Fade To Black Remastered.mp3",
         "artista": "Metallica"
       }
     ]
@@ -69,27 +69,27 @@
     "Listados": [
       {
         "nombre": "Changes",
-        "url": "Url Cancion 3",
+        "url": "./Songs/2Pac - Changes.mp3",
         "artista": "2pac"
       },
       {
         "nombre": "A tout le monde",
-        "url": "Url Cancion 4",
+        "url": "./Songs/Megadeth - A tout le monde.mp3",
         "artista": "Megadeth"
       },
       {
         "nombre": "Invisible",
-        "url": "Url Cancion 56",
+        "url": "./Songs/U2 - Invisible.mp3",
         "artista": "U2"
       },
       {
         "nombre": "Ordinary Love",
-        "url": "Url Cancion 57",
+        "url": "./Songs/U2 - Ordinary Love.mp3",
         "artista": "U2"
       },
       {
         "nombre": "Stay (Faraway, So Close!)",
-        "url": "Url Cancion 58",
+        "url": "./Songs/U2 -  Stay Faraway So Close.mp3",
         "artista": "U2"
       }
     ]
@@ -101,27 +101,27 @@
     "Listados": [
       {
         "nombre": "Russian Strings",
-        "url": "Url Cancion 76",
+        "url": "./Songs/BLUR - Russian Strings.mp3",
         "artista": "Blur"
       },
       {
         "nombre": "The Everglades (For Leonard)",
-        "url": "Url Cancion 77",
+        "url": "./Songs/BLUR - The Everglades For Leonard.mp3",
         "artista": "Blur"
       },
       {
         "nombre": "Goodbye Albert",
-        "url": "Url Cancion 78",
+        "url": "./Songs/BLUR - Goodbye Albert.mp3",
         "artista": "Blur"
       },
       {
         "nombre": "Vertigo",
-        "url": "Url Cancion 60",
+        "url": "./Songs/U2 - Vertigo.mp3",
         "artista": "U2"
       },
       {
         "nombre": "City of Blinding Lights",
-        "url": "Url Cancion 61",
+        "url": "./Songs/U2 - City Of Blinding Lights.mp3",
         "artista": "U2"
       }
     ]
