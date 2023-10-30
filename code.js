@@ -119,11 +119,6 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
   divPlaylist.addEventListener("click", () => { //Una vez que ya tengo cada div separado, escribo la funcionalidad a cada uno
     renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
     renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
-    renderizadoSecundario.style.flexDirection = "column";
-    renderizadoSecundario.style.justifyContent = "center";
-    renderizadoSecundario.style.alignContent = "center";
-    renderizadoSecundario.style.height = "400px";
-    renderizadoSecundario.style.background = "rgba(0, 0, 0, .1)";
 
     for (let playLista of divPlaylist.children) { //divPlaylist que son los div por separados tomados con anterioridad, accedo .children a  los elementos que contiene cada div
       let spanListas = playLista.querySelector("span") //la variable va a tener el valor del elemento recorrido por playLista, en este caso, cada span dentro de cada div (trae el elemento).
@@ -142,6 +137,8 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 const divSpanMasSpan = document.createElement("div"); //div donde se alojan los spans
                 const spanArtista = document.createElement("span"); //span con nombre artista
                 const spanCancion = document.createElement("span"); //span con nombre cancion
+                const imagenBotonLista = document.createElement("img");
+
 
 
                 //doy atributos a los elementos creados
@@ -150,6 +147,7 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 botonPlaylist.setAttribute("id", "botonPlaylist");
                 divCancion.setAttribute("id", "divCancion");
                 divSpanMasSpan.setAttribute("id", "divSpanMasSpan");
+                imagenBotonLista.setAttribute("id", "imagenBotonListas");
 
 
                 //entrelazo los elementos dentro de los contenedores que corresponden
@@ -160,27 +158,12 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 divCancion.appendChild(botonPlaylist);
                 divSpanMasSpan.appendChild(spanCancion);
                 divSpanMasSpan.appendChild(spanArtista);
+                botonPlaylist.appendChild(imagenBotonLista);
+
 
                 //Agrego contenido a los spans creados dependiendo el nombre de la cancion y el artista
                 spanArtista.textContent = `${cancionesListados.artista}`;
                 spanCancion.textContent = `${cancionesListados.nombre}`;
-
-                //Estilo a las playlist 
-
-                divCancion.style.display = "flex";
-                divCancion.style.justifyContent = "space-between";
-                divCancion.style.padding = "10px";
-                divCancion.style.marginLeft = "10px"
-                divCancion.style.marginRight = "10px"
-
-                divSpanMasSpan.style.display = "flex";
-                divSpanMasSpan.style.flexDirection = "column";
-
-                botonPlaylist.style.backgroundImage = "url(./Assets/PLAY.png)";
-                botonPlaylist.style.backgroundSize = "30px 30px";
-                botonPlaylist.style.backgroundRepeat = "no-repeat"
-                botonPlaylist.style.width = "40px";
-                botonPlaylist.style.height = "40px";
 
                 //reutilizo el evento play del reproductor modificando los valores
                 botonPlaylist.addEventListener("click", () => {
@@ -212,7 +195,6 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 botonPlaylist.setAttribute("id", "botonPlaylist");
                 divCancion.setAttribute("id", "divCancion");
                 divSpanMasSpan.setAttribute("id", "divSpanMasSpan");
-                imagenBotonLista.setAttribute("id", "imagenBotonListas");
 
 
                 //entrelazo los elementos dentro de los contenedores que corresponden
@@ -229,25 +211,6 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 //Agrego contenido a los spans creados dependiendo el nombre de la cancion y el artista
                 spanArtista.textContent = `${cancionesListados.artista}`;
                 spanCancion.textContent = `${cancionesListados.nombre}`;
-
-                //Estilo a las playlist 
-
-                divCancion.style.display = "flex";
-                divCancion.style.justifyContent = "space-between";
-                divCancion.style.padding = "10px";
-                divCancion.style.marginLeft = "10px";
-                divCancion.style.marginRight = "10px";
-
-
-                divSpanMasSpan.style.display = "flex";
-                divSpanMasSpan.style.flexDirection = "column";
-
-                botonPlaylist.style.backgroundImage = "url(./Assets/PLAY.png)";
-                botonPlaylist.style.backgroundSize = "30px 30px";
-                botonPlaylist.style.backgroundRepeat = "no-repeat"
-                botonPlaylist.style.width = "40px";
-                botonPlaylist.style.height = "40px";
-
 
                 //reutilizo el evento play del reproductor modificando los valores
                 botonPlaylist.addEventListener("click", () => {
