@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb {
 #renderizadoSecundario{
     display: none;
     flex-direction: column;
-    height: 400px;
+    height: 67vh;
     background: rgba(0, 0, 0, .1);
 };
 
