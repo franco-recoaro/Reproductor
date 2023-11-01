@@ -196,33 +196,50 @@ body::-webkit-scrollbar-thumb {
 }
 
 /******************DIV RENDERIZADO PARA LISTAS **************/
-/*
 
-                divCancion.style.display = "flex";
-                divCancion.style.justifyContent = "space-between";
-                divCancion.style.padding = "10px";
-                divCancion.style.marginLeft = "10px";
-                divCancion.style.marginRight = "10px";
+#renderizadoSecundario{
+    display: none;
+    flex-direction: column;
+    height: 400px;
+    background: rgba(0, 0, 0, .1);
+};
 
+#renderizadoPrimario{
+    display: block;
+}
 
-                divSpanMasSpan.style.display = "flex";
-                divSpanMasSpan.style.flexDirection = "column";
+#divCancion{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-                botonPlaylist.style.backgroundImage = "url(./Assets/PLAY.png)";
-                botonPlaylist.style.backgroundSize = "30px 30px";
-                botonPlaylist.style.backgroundRepeat = "no-repeat"
-                botonPlaylist.style.width = "40px";
-                botonPlaylist.style.height = "40px";
+#divSpanMasSpan{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
-                    renderizadoSecundario.style.flexDirection = "column";
-    renderizadoSecundario.style.justifyContent = "center";
-    renderizadoSecundario.style.alignContent = "center";
-    renderizadoSecundario.style.height = "400px";
-    renderizadoSecundario.style.background = "rgba(0, 0, 0, .1)";
+#divCancion:hover{
+    background-color: rgba(15, 15, 15, .5);
+}
 
+#spanArtista{
+    font-style: italic;
+    font-size: 13px;
+}
 
-*/
+#imagenPlaylist{
+    background-color: transparent;
+}
 
+#botonPlaylist{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 /* CONTENEDOR MAIN */
 

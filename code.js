@@ -35,6 +35,10 @@ botonReproducir.forEach(boton => {
 let crearSpan = document.createElement("span");
 nombreCancionReproducida.appendChild(crearSpan);
 
+//MANEJO DE VOLUMEN AL INICIAR CANCION
+
+reproductorMusica.volume = 0.5;  // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
+
 
 botonReproducir.forEach(boton => {
   boton.addEventListener("click", () => {
@@ -43,7 +47,7 @@ botonReproducir.forEach(boton => {
       {
         reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
         reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
-        reproductorMusica.volume = 0.5;  // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
+        console.log(reproductorMusica.volume)
         botonPlay.style.display = "none";
         botonPause.style.display = "block";
         crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //El span creado cambia su contenido de texto dependiendo la cancion pasada al elemento audio. El objeto cancion toma como dato el nombre de la cancion y el nombre del artista.
@@ -116,6 +120,7 @@ let listasReproduccion = document.querySelectorAll("#listasReproduccion");
 //Argumento = valores que paso cuando llamo la funcion
 
 listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasRe..." con el parametro divPlaylist
+  
   divPlaylist.addEventListener("click", () => { //Una vez que ya tengo cada div separado, escribo la funcionalidad a cada uno
     renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
     renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
@@ -137,40 +142,35 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 const divSpanMasSpan = document.createElement("div"); //div donde se alojan los spans
                 const spanArtista = document.createElement("span"); //span con nombre artista
                 const spanCancion = document.createElement("span"); //span con nombre cancion
-                const imagenBotonLista = document.createElement("img");
-
-
 
                 //doy atributos a los elementos creados
-
                 divPlaylist.setAttribute("id", "playlistDiv");
                 botonPlaylist.setAttribute("id", "botonPlaylist");
                 divCancion.setAttribute("id", "divCancion");
                 divSpanMasSpan.setAttribute("id", "divSpanMasSpan");
-                imagenBotonLista.setAttribute("id", "imagenBotonListas");
+                spanArtista.setAttribute("id", "spanArtista")
 
 
                 //entrelazo los elementos dentro de los contenedores que corresponden
-
                 renderizadoSecundario.appendChild(divPlaylist);
                 divPlaylist.appendChild(divCancion);
                 divCancion.appendChild(divSpanMasSpan);
                 divCancion.appendChild(botonPlaylist);
                 divSpanMasSpan.appendChild(spanCancion);
                 divSpanMasSpan.appendChild(spanArtista);
-                botonPlaylist.appendChild(imagenBotonLista);
 
 
-                //Agrego contenido a los spans creados dependiendo el nombre de la cancion y el artista
+                //Agrego contenido a los elementos creados dependiendo el nombre de la cancion y el artista
                 spanArtista.textContent = `${cancionesListados.artista}`;
                 spanCancion.textContent = `${cancionesListados.nombre}`;
+                botonPlaylist.innerHTML = '<img src="./Assets/PLAY.png" width="20px" heigth="20px">'
 
                 //reutilizo el evento play del reproductor modificando los valores
                 botonPlaylist.addEventListener("click", () => {
                   if (divSpanMasSpan.children[0].textContent.toLowerCase() === cancionesListados.nombre.toLowerCase()) {
                     reproductorMusica.src = `${cancionesListados.url}`;
                     reproductorMusica.play();
-                    reproductorMusica.volume = 0.5;
+                    console.log(reproductorMusica.volume);
                     botonPlay.style.display = "none";
                     botonPause.style.display = "block";
                     crearSpan.textContent = `${cancionesListados.nombre} - ${cancionesListados.artista}`
@@ -190,15 +190,15 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 const imagenBotonLista = document.createElement("img");
 
                 //doy atributos a los elementos creados
-
                 divPlaylist.setAttribute("id", "playlistDiv");
                 botonPlaylist.setAttribute("id", "botonPlaylist");
                 divCancion.setAttribute("id", "divCancion");
                 divSpanMasSpan.setAttribute("id", "divSpanMasSpan");
+                spanArtista.setAttribute("id", "spanArtista")
+
 
 
                 //entrelazo los elementos dentro de los contenedores que corresponden
-
                 renderizadoSecundario.appendChild(divPlaylist);
                 divPlaylist.appendChild(divCancion);
                 divCancion.appendChild(divSpanMasSpan);
@@ -208,16 +208,17 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
                 botonPlaylist.appendChild(imagenBotonLista);
 
 
-                //Agrego contenido a los spans creados dependiendo el nombre de la cancion y el artista
+                //Agrego contenido a los elementos creados dependiendo el nombre de la cancion y el artista
                 spanArtista.textContent = `${cancionesListados.artista}`;
                 spanCancion.textContent = `${cancionesListados.nombre}`;
+                botonPlaylist.innerHTML = '<img  src="./Assets/PLAY.png" width="20px" heigth="20px">'
 
                 //reutilizo el evento play del reproductor modificando los valores
                 botonPlaylist.addEventListener("click", () => {
                   if (divSpanMasSpan.children[0].textContent.toLowerCase() === cancionesListados.nombre.toLowerCase()) {
                     reproductorMusica.src = `${cancionesListados.url}`;
                     reproductorMusica.play();
-                    reproductorMusica.volume = 0.5;
+                    console.log(reproductorMusica.volume)
                     botonPlay.style.display = "none";
                     botonPause.style.display = "block";
                     crearSpan.textContent = `${cancionesListados.nombre} - ${cancionesListados.artista}`
@@ -234,6 +235,7 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
 
 
 /******************************************BOTON ATRAS**************************************************/
+
 
 
 /************************************INPUT BUSCAR CANCION***********************************************/
