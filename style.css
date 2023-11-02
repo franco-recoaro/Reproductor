@@ -195,12 +195,12 @@ body::-webkit-scrollbar-thumb {
     height: 100px;
 }
 
-/******************DIV RENDERIZADO PARA LISTAS **************/
+/******************DIV RENDERIZADO PARA LISTAS ****************/
 
 #renderizadoSecundario{
     display: none;
     flex-direction: column;
-    height: 67vh;
+    height: auto;
     background: rgba(0, 0, 0, .1);
 };
 
@@ -231,15 +231,18 @@ body::-webkit-scrollbar-thumb {
     font-size: 13px;
 }
 
-#imagenPlaylist{
-    background-color: transparent;
-}
-
 #botonPlaylist{
     border: 0;
     background-color: transparent;
     cursor: pointer;
 }
+
+/******************DIV RENDERIZADO PARA ALBUNS ****************/
+#botonAlbun{
+    background: transparent;
+    border: 0;
+}
+
 
 /* CONTENEDOR MAIN */
 
@@ -322,7 +325,7 @@ margin-left: 0px;
     align-items: center;
     justify-content: space-between;
     width: 30%;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #0F0F0F;
     gap: 10px;
     text-align: center;
@@ -333,11 +336,13 @@ margin-left: 0px;
     background-color: rgba(104, 103, 103, 0.1);
 }
 
-.tuMusica .albumNuevo {
+.albumNuevo {
     display: flex;
     flex-direction: column;
-    width: auto;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
 }
 
 .listasRecomendadas {

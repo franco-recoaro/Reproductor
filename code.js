@@ -16,10 +16,10 @@ const nombreCancionReproducida = document.querySelector("#nombreCancionReproduci
 /*********************************************FUNCIONALIDADES REPRODUCTOR********************************************/
 
 
-let regex = /\w+/gi;
+let regex = /\S+/g;
 //Busca los espacios en blanco y los elimina
-///\w+/ de regex encuentra los caracteres alfanumericos seguidos
-//gi no importa que sean minisculas o mayusculas
+///\S+/ matchea todos los caracteres sin contar los espacios en blanco
+//g no importa que sean minisculas o mayusculas
 
 botonReproducir.forEach(boton => {
   const botones = boton.parentNode; //parent node se utiliza para que trabaje en cada bloque padre de cada elemento y no se utilice siempre el primero
@@ -124,6 +124,7 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
   divPlaylist.addEventListener("click", () => { //Una vez que ya tengo cada div separado, escribo la funcionalidad a cada uno
     renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
     renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
+    renderizadoSecundario.style.height = "67vh"
 
     for (let playLista of divPlaylist.children) { //divPlaylist que son los div por separados tomados con anterioridad, accedo .children a  los elementos que contiene cada div
       let spanListas = playLista.querySelector("span") //la variable va a tener el valor del elemento recorrido por playLista, en este caso, cada span dentro de cada div (trae el elemento).
@@ -251,11 +252,20 @@ const divAlbums = document.querySelectorAll("#divAlbums");
 
 divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
   divsAlbunes.addEventListener("click", () => {
+    renderizadoSecundario.innerHTML = '<div id="renderizadoSecundario"></div>'
     renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
     renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
+    
+    //spanAlbumes toma el valor de cada primer elemento span - .textcontent
+    //recorre cada div del div .divAlbums
+    let spanAlbumes = divsAlbunes.querySelector("span").textContent;
+    //Toma los valores de los span y elimina los espacios en blanco que tienen de sobra para poder matchear los albums.nombre
+    let resultadoSpan = spanAlbumes.match(regex).join(" ")
+
     for (let albuns of albums) { //Recorro con "albuns" cada objeto dentro de albums.json
-      if (divsAlbunes.querySelector("span").innerText.toLowerCase() === albuns.nombre.toLowerCase()) {
-        if (renderizadoSecundario.length === 0) { //si la longitud de renderizado secundario es igual a 0, imprimo el listado de canciones
+
+      if (resultadoSpan.toLowerCase() === albuns.nombre.toLowerCase()) {
+        if (renderizadoSecundario.length === 0) {
 
           albuns.Listado.forEach((cancionAlbun) => {
             const divAlbuns = document.createElement("div"); //div principal con todo el listado
@@ -283,6 +293,7 @@ divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
             //Agrego contenido a los elementos creados dependiendo el nombre de la cancion y el artista
             //spanArtista.textContent = `${cancionAlbun.artista}`;
             spanCancion.textContent = `${cancionAlbun.nombre}`;
+            spanArtista.textContent = `${cancionAlbun.artista}`;
             botonAlbun.innerHTML = '<img src="./Assets/PLAY.png" width="20px" heigth="20px">';
 
             //reutilizo el evento play del reproductor modificando los valores
@@ -328,6 +339,7 @@ divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
             //Agrego contenido a los elementos creados dependiendo el nombre de la cancion y el artista
             //spanArtista.textContent = `${cancionAlbun.artista}`;
             spanCancion.textContent = `${cancionAlbun.nombre}`;
+            spanArtista.textContent = `${cancionAlbun.artista}`;
             botonAlbun.innerHTML = '<img src="./Assets/PLAY.png" width="20px" heigth="20px">';
 
             //reutilizo el evento play del reproductor modificando los valores
