@@ -81,9 +81,11 @@ botonStop.addEventListener("click", () => { // evento boton Stop
 )
 
 
-botonPlay.addEventListener("click", () => { //Evento boton play para que se reproduzca si hay una cancion enviada al elemento audio
+botonPlay.addEventListener("click", (e) => { //Evento boton play para que se reproduzca si hay una cancion enviada al elemento audio
+  e.preventDefault()
   if (reproductorMusica.src != "#") { //Condicion si el src no se encuentra vacio = se ejecuta la funcion play y se esconde el play y aparece el pause.
     reproductorMusica.play()
+
     botonPlay.style.display = "none";
     botonPause.style.display = "block";
   }
@@ -361,6 +363,8 @@ divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
 });
 
 /************************************INPUT BUSCAR CANCION***********************************************/
+let buscadorCancion = document.querySelector("#buscadorCanciones");
+
 
 
 

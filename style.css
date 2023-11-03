@@ -214,6 +214,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #divSpanMasSpan{
@@ -238,6 +239,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 /******************DIV RENDERIZADO PARA ALBUNS ****************/
+
+
 #botonAlbun{
     background: transparent;
     border: 0;
@@ -262,7 +265,7 @@ body::-webkit-scrollbar-thumb {
 
 .barraNav {
     grid-area: header;
-    height: 50px;
+    height: 90px;
     width: auto;
     display: flex;
     justify-content: space-between;
