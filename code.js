@@ -257,6 +257,7 @@ divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
     renderizadoSecundario.innerHTML = '<div id="renderizadoSecundario"></div>'
     renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
     renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
+    renderizadoSecundario.style.height = "67vh"
     
     //spanAlbumes toma el valor de cada primer elemento span - .textcontent
     //recorre cada div del div .divAlbums
