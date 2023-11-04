@@ -43,6 +43,122 @@
     "nombre":"One",
     "url": "./Songs/Metallica - One Remastered.mp3",
     "artista":"Metallica"
+},{
+    "nombre":"Aquí te espero",
+    "url": "./Songs/Abel Pintos - Aquí Te Espero.mp3",
+    "artista":"Abel Pintos"
+},{
+    "nombre":"Back to Black",
+    "url": "./Songs/Amy Winehouse - Back To Black.mp3",
+    "artista":"Amy Winehouse"
+},{
+    "nombre":"You know im no good",
+    "url": "./Songs/Amy Winehouse - You Know Im No Good.mp3",
+    "artista":"Amy Winehouse"
+},{
+    "nombre":"Por una cabeza",
+    "url": "./Songs/Carlos Gardel - Por una Cabeza.mp3",
+    "artista":"Carlos Gardel"
+},{
+    "nombre":"Accidentally In Love",
+    "url": "./Songs/City Sessions - Accidentally In Love.mp3",
+    "artista":"City Sessions"
+},{
+    "nombre":"Another Love",
+    "url": "./Songs/City Sessions - Another Love.mp3",
+    "artista":"City Sessions"
+},{
+    "nombre":"Blinding Lights",
+    "url": "./Songs/City Sessions - Blinding Lights.mp3",
+    "artista":"City Sessions"
+},{
+    "nombre":"Boulevard Of Broken",
+    "url": "./Songs/City Sessions - Boulevard Of Broken Dreams.mp3",
+    "artista":"City Sessions"
+},{
+    "nombre":"Dont you Worry Child",
+    "url": "./Songs/City Sessions - Dont You Worry Child.mp3",
+    "artista":"City Sessions"
+},{
+    "nombre":"Lose Yourself",
+    "url": "./Songs/City Sessions - Lose Yourself.mp3",
+    "artista":"City Sessions"
+},{
+    "nombre":"No te creas tan importante",
+    "url": "./Songs/Damas Gratis - No Te Creas Tan Importante.mp3",
+    "artista":"Damas Gratis"
+},{
+    "nombre":"Cant Help Falling in Love",
+    "url": "./Songs/Elvis Presley - Cant Help Falling In Love.mp3",
+    "artista":"Elvis Presley"
+},{
+    "nombre":"Fly me to the moon",
+    "url": "./Songs/Frank Sinatra - Fly Me To The Moon.mp3",
+    "artista":"Frank Sinatra"
+},{
+    "nombre":"I will survive",
+    "url": "./Songs/Gloria Gaynor - I Will Survive.mp3",
+    "artista":"Gloria Gaynor"
+},{
+    "nombre":"Dont cry",
+    "url": "./Songs/Guns and Roses - Dont Cry.mp3",
+    "artista":"Guns and Roses"
+},{
+    "nombre":"Crímenes Perfectos",
+    "url": "./Songs/Gustavo Cerati - Crímenes perfectos.mp3",
+    "artista":"Gustavo Cerati"
+},{
+    "nombre":"Holding out for a hero",
+    "url": "./Songs/Holding Out for a Hero - Holding Out for a Hero.mp3",
+    "artista":"Bonnie Tyler"
+},{
+    "nombre":"La vie en rose",
+    "url": "./Songs/Louis Armstrong - La vie en rose.mp3",
+    "artista":"Louis Armstrong"
+},{
+    "nombre":"CORAZÓN VACÍO",
+    "url": "./Songs/Maria Becerra - CORAZÓN VACÍO.mp3",
+    "artista":"Maria Becerra"
+},{
+    "nombre":"Creep",
+    "url": "./Songs/Radiohead - Creep.mp3",
+    "artista":"Radiohead"
+},{
+    "nombre":"Hit the road jack",
+    "url": "./Songs/Ray Charles - Hit the Road Jack.mp3",
+    "artista":"Ray Charles"
+},{
+    "nombre":"Californication",
+    "url": "./Songs/Red Hot Chili Peppers - Californication.mp3",
+    "artista":"Red hot chili pappers"
+},{
+    "nombre":"Still Loving You",
+    "url": "./Songs/Scorpions - Still Loving You.mp3",
+    "artista":"Scorpions"
+},{
+    "nombre":"Sweet child o'mine",
+    "url": "./Songs/Sheryl Crow - Sweet Child O Mine.mp3",
+    "artista":"Sheryl Crow"
+},{
+    "nombre":"Seguir viviendo sin tu amor",
+    "url": "./Songs/Spinetta - Seguir Viviendo Sin Tu Amor.mp3",
+    "artista":"Spinetta"
+},{
+    "nombre":"Stand by me",
+    "url": "./Songs/Stand by Me - Ben E King.mp3",
+    "artista":"Ben E King"
+},{
+    "nombre":"Until i found you",
+    "url": "./Songs/Stephen Sanchez - Until I Found You.mp3",
+    "artista":"Stephen Sanchez"
+},{
+    "nombre":"I just called to say i love you",
+    "url": "./Songs/Stevie Wonder - I Just Called To Say I love you.mp3",
+    "artista":"Stevie Wonder"
+},{
+    "nombre":"Sweater Weather",
+    "url": "./Songs/City Sessions - Sweater Weather.mp3",
+    "artista":"City Sessions"
 }
 ]
 
