@@ -7,9 +7,9 @@ const botonReproducir = document.querySelectorAll("#reproducir");
 const reproductorMusica = document.querySelector("audio");
 const botonPlay = document.querySelector("#botonPlay");
 const botonPause = document.querySelector("#botonPause")
-const botonNext = document.querySelector("#botonNext")
+const botonFiveNext = document.querySelector("#botonFiveNext")
 const botonStop = document.querySelector("#botonStop")
-const botonBack = document.querySelector("#botonBack")
+const botonFiveBack = document.querySelector("#botonFiveBack")
 const volume = document.querySelector("#volume-control");
 const nombreCancionReproducida = document.querySelector("#nombreCancionReproducida")
 
@@ -58,7 +58,7 @@ botonReproducir.forEach(boton => {
 
 
 
-botonNext.addEventListener("click", () => {
+botonFiveNext.addEventListener("click", () => {
   reproductorMusica.currentTime += 5; //.currenTime es la propiedad que me marca el tiempo actual de la cancion
 }
 )
@@ -93,13 +93,13 @@ botonPlay.addEventListener("click", (e) => { //Evento boton play para que se rep
 );
 
 //funcion que cuando aprete click, adelante 5 seg la cancion
-botonNext.addEventListener("click", () => {
+botonFiveNext.addEventListener("click", () => {
   reproductorMusica.currentTime += 5; //.currenTime es la propiedad que me marca el tiempo actual de la cancion
 }
 );
 
 //funcion que cuando aprete click, atrase 5 seg la cancion
-botonBack.addEventListener("click", () => {
+botonFiveBack.addEventListener("click", () => {
   if (reproductorMusica.currentTime >= 6) {
     reproductorMusica.currentTime -= 5
   }
@@ -126,7 +126,6 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
   divPlaylist.addEventListener("click", () => { //Una vez que ya tengo cada div separado, escribo la funcionalidad a cada uno
     renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
     renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
-    renderizadoSecundario.style.height = "67vh"
 
     for (let playLista of divPlaylist.children) { //divPlaylist que son los div por separados tomados con anterioridad, accedo .children a  los elementos que contiene cada div
       let spanListas = playLista.querySelector("span") //la variable va a tener el valor del elemento recorrido por playLista, en este caso, cada span dentro de cada div (trae el elemento).
@@ -257,7 +256,6 @@ divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
     renderizadoSecundario.innerHTML = '<div id="renderizadoSecundario"></div>'
     renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
     renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
-    renderizadoSecundario.style.height = "67vh"
     
     //spanAlbumes toma el valor de cada primer elemento span - .textcontent
     //recorre cada div del div .divAlbums
