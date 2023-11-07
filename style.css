@@ -389,6 +389,11 @@ margin-left: 0px;
     border-radius: 5px;
 }
 
+.segundaLinea>div>span>i{
+    font-size: 15px;
+    color: rgb(90, 86, 86);
+}
+
 .segundaLinea>div:hover {
     display: flex;
     flex-direction: column;
