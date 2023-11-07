@@ -56,6 +56,21 @@ botonReproducir.forEach(boton => {
   })
 });
 
+botonReproducir.forEach(boton => {
+  boton.addEventListener("click", () => {
+    for (let cancion of canciones) { //separa en constantes diferentees cada objeto en el JSON
+      if (cancion.nombre.toLowerCase() === boton.value.toLowerCase()) // Comparamos si canciones.nombre es igual a boton.value (toLowerCase es una funcion predeterminada que si existe alguna mayuscula la toma como igual)
+      {
+        reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
+        reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
+        console.log(reproductorMusica.volume)
+        botonPlay.style.display = "none";
+        botonPause.style.display = "block";
+        crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //El span creado cambia su contenido de texto dependiendo la cancion pasada al elemento audio. El objeto cancion toma como dato el nombre de la cancion y el nombre del artista.
+      }
+    }
+  })
+});
 
 
 botonFiveNext.addEventListener("click", () => {
@@ -365,7 +380,45 @@ divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
 /************************************INPUT BUSCAR CANCION***********************************************/
 let buscadorCancion = document.querySelector("#buscadorCanciones");
 
+buscadorCancion.addEventListener("input",(e) => {
+  if(e.target.value == ""){
+    renderizadoSecundario.style.display = "none";
+    renderizadoPrimario.style.display = "block";
+  }else{
+    renderizadoSecundario.style.display = "flex";
+    renderizadoPrimario.style.display = "none";
+    let valorInput = e.target.value.trim().toLowerCase();
+    renderizadoSecundario.innerHTML = "";
+    let listaInput = document.createElement("ul");
 
+    canciones.forEach(cancion => {
 
+      let cancionInput = cancion.nombre.toLowerCase();
+
+      if(cancionInput.includes(valorInput)){
+        let renglonLista = document.createElement("li");
+        let botonLista = document.createElement("button");
+        botonLista.addEventListener("click", ()=>{
+          reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
+          reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
+          botonPlay.style.display = "none";
+          botonPause.style.display = "block";
+
+          //CREAR SPAN ABAJO DEL REPRODUCTOR
+        });
+
+        let spanCancion = document.createElement("span");
+        renglonLista.appendChild(botonLista);
+        botonLista.appendChild(spanCancion);
+        listaInput.appendChild(renglonLista);
+        spanCancion.textContent = `${cancion.nombre}`;
+
+        //DAR ESTILO A LA LISTA (SE PUEDE DAR ATRIBUTOS DESDE ACA - SETATTRIBUTE)
+
+      }
+    });
+    renderizadoSecundario.appendChild(listaInput)
+  }
+});
 
 /**************************************PASAR DE CANCION ************************************************/
