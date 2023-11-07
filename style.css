@@ -352,15 +352,17 @@ margin-left: 0px;
 }
 
 .listasRecomendadas {
-    height: 190px;
+    display: flex;
+    flex-direction: column;
 }
 
 .segundaLinea{
     display: flex;
     flex-wrap: nowrap;
-    gap: 35px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
+    max-height: 100%;
 }
 
 .segundaLinea>div {
@@ -370,8 +372,8 @@ margin-left: 0px;
     align-items: center;
     border-radius: 10px;
     background-color: #0F0F0F;
-    height: 12rem;
-    width: 12rem;
+    height: 15rem;
+    width: 12rem;    
 }
 
 .segundaLinea div>span {
@@ -379,8 +381,12 @@ margin-left: 0px;
 }
 
 .segundaLinea>div>img {
-    margin-top: 0;
+    width: 80%;
+    height: 80%;
+    image-rendering: auto;
     margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 .segundaLinea>div:hover {

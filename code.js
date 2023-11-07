@@ -105,6 +105,7 @@ botonFiveBack.addEventListener("click", () => {
   }
 });
 
+
 volume.addEventListener("change", (ev) => {
   reproductorMusica.volume = ev.currentTarget.value / 100;
   console.log(reproductorMusica.volume);
@@ -230,7 +231,7 @@ listasReproduccion.forEach((divPlaylist) => { //Recorro cada div con id "listasR
             }
           }
         }
-      })
+      })      
     }
   });
 });
