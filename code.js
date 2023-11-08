@@ -39,7 +39,6 @@ nombreCancionReproducida.appendChild(crearSpan);
 
 reproductorMusica.volume = 0.5;  // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
 
-
 botonReproducir.forEach(boton => {
   boton.addEventListener("click", () => {
     for (let cancion of canciones) { //separa en constantes diferentees cada objeto en el JSON
@@ -47,27 +46,12 @@ botonReproducir.forEach(boton => {
       {
         reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
         reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
-        console.log(reproductorMusica.volume)
         botonPlay.style.display = "none";
         botonPause.style.display = "block";
         crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //El span creado cambia su contenido de texto dependiendo la cancion pasada al elemento audio. El objeto cancion toma como dato el nombre de la cancion y el nombre del artista.
       }
-    }
-  })
-});
-
-botonReproducir.forEach(boton => {
-  boton.addEventListener("click", () => {
-    for (let cancion of canciones) { //separa en constantes diferentees cada objeto en el JSON
-      if (cancion.nombre.toLowerCase() === boton.value.toLowerCase()) // Comparamos si canciones.nombre es igual a boton.value (toLowerCase es una funcion predeterminada que si existe alguna mayuscula la toma como igual)
-      {
-        reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
-        reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
-        console.log(reproductorMusica.volume)
-        botonPlay.style.display = "none";
-        botonPause.style.display = "block";
-        crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //El span creado cambia su contenido de texto dependiendo la cancion pasada al elemento audio. El objeto cancion toma como dato el nombre de la cancion y el nombre del artista.
-      }
+      let resultadoCancion = canciones.filter((songs) => songs.url.includes(reproductorMusica.src));
+      console.log(resultadoCancion);
     }
   })
 });
