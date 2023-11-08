@@ -378,6 +378,7 @@ divAlbums.forEach((divsAlbunes) => { //recorro cada div de los albumnes en html
 });
 
 /************************************INPUT BUSCAR CANCION***********************************************/
+
 let buscadorCancion = document.querySelector("#buscadorCanciones");
 
 buscadorCancion.addEventListener("input",(e) => {
@@ -389,31 +390,47 @@ buscadorCancion.addEventListener("input",(e) => {
     renderizadoPrimario.style.display = "none";
     let valorInput = e.target.value.trim().toLowerCase();
     renderizadoSecundario.innerHTML = "";
-    let listaInput = document.createElement("ul");
+    let listaInput = document.createElement("div");
+    listaInput.className = "listaInput";
 
     canciones.forEach(cancion => {
 
       let cancionInput = cancion.nombre.toLowerCase();
 
       if(cancionInput.includes(valorInput)){
-        let renglonLista = document.createElement("li");
-        let botonLista = document.createElement("button");
+
+        let renglonLista = document.createElement("div");
+        renglonLista.className = "renglonLista"
+
+        let botonLista = document.createElement("a");
+        botonLista.className = "botonLista";
+
         botonLista.addEventListener("click", ()=>{
           reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
           reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
           botonPlay.style.display = "none";
           botonPause.style.display = "block";
+          crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //paso el valor obtenido de nombre y artista al span de reproductor
 
-          //CREAR SPAN ABAJO DEL REPRODUCTOR
         });
 
-        let spanCancion = document.createElement("span");
-        renglonLista.appendChild(botonLista);
-        botonLista.appendChild(spanCancion);
-        listaInput.appendChild(renglonLista);
-        spanCancion.textContent = `${cancion.nombre}`;
+        let contenedorSpans = document.createElement("div");
+        contenedorSpans.setAttribute("id","contenedorSpansListas")
 
-        //DAR ESTILO A LA LISTA (SE PUEDE DAR ATRIBUTOS DESDE ACA - SETATTRIBUTE)
+        let spanCancion = document.createElement("span");
+        spanCancion.className = "spanCancion"
+
+        let spanArtista = document.createElement("span");
+        spanArtista.className = "spanArtista";
+
+        listaInput.appendChild(renglonLista);
+        renglonLista.append(botonLista);
+        botonLista.appendChild(contenedorSpans);
+        contenedorSpans.append(spanCancion);
+        contenedorSpans.appendChild(spanArtista);
+        
+        spanCancion.textContent = `${cancion.nombre}`;
+        spanArtista.textContent = `${cancion.artista}`;
 
       }
     });
