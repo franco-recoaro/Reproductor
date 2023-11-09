@@ -109,13 +109,13 @@
       "artista": "Guns and Roses"
     },
     {
-      "nombre": "Crímenes Perfectos",
-      "url": "./Songs/Gustavo Cerati - Crímenes perfectos.mp3",
+      "nombre": "Crimenes Perfectos",
+      "url": "./Songs/Gustavo Cerati - Crimenes perfectos.mp3",
       "artista": "Gustavo Cerati"
     },
     {
       "nombre": "Holding out for a hero",
-      "url": "./Songs/Holding Out for a Hero - Holding Out for a Hero.mp3",
+      "url": "./Songs/Bonnie Tyler - Holding Out for a Hero.mp3",
       "artista": "Bonnie Tyler"
     },
     {
@@ -124,8 +124,8 @@
       "artista": "Louis Armstrong"
     },
     {
-      "nombre": "CORAZÓN VACÍO",
-      "url": "./Songs/Maria Becerra - CORAZÓN VACÍO.mp3",
+      "nombre": "CORAZON VACIO",
+      "url": "./Songs/Maria Becerra - CORAZON VACIO.mp3",
       "artista": "Maria Becerra"
     },
     {
