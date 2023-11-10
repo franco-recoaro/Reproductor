@@ -44,11 +44,13 @@ nombreCancionReproducida.appendChild(crearSpan);
 reproductorMusica.volume = 0.5;  // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
 
 botonReproducir.forEach(boton => {
+  let indiceInicio;
   boton.addEventListener("click", () => {
     for (let cancion of canciones) { //separa en constantes diferentees cada objeto en el JSON
       if (cancion.nombre.toLowerCase() === boton.value.toLowerCase()) // Comparamos si canciones.nombre es igual a boton.value (toLowerCase es una funcion predeterminada que si existe alguna mayuscula la toma como igual)
       {
         reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
+        indiceInicio = cancion.id;  
         reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
         botonPlay.style.display = "none";
         botonPause.style.display = "block";
@@ -57,40 +59,31 @@ botonReproducir.forEach(boton => {
       }
     }
     function cancionSiguiente() {
-      let variableSpan = document.querySelector("#spanReproductor").textContent;
-
-      let [cancionDestructurada, artista] = variableSpan.split(" - "); //Divide el span en dos partes almacenando en dos variables ( canciónes y artista) lo divide en " - ", entonces canción sería la primer parte, artista va a ser la segunda
-
-      let indiceFiltro = canciones.findIndex(cancion => cancion.nombre===cancionDestructurada);
-      reproductorMusica.src = canciones[indiceFiltro+1].url  
-      reproductorMusica.play();
-
-      let nuevaCancion = `${canciones[indiceFiltro + 1].nombre} - ${canciones[indiceFiltro + 1].artista}`;
-      document.querySelector("#spanReproductor").textContent = nuevaCancion;
-
-      if(indiceFiltro < canciones.length - 1){
-        reproductorMusica.src = canciones[indiceFiltro+1].url;
-        crearSpan.textContent = `${canciones[indiceFiltro + 1].nombre} - ${canciones[indiceFiltro + 1].artista}`;
+      let indiceFiltro = canciones.findIndex((song) => song.id === indiceInicio)
+      if (indiceFiltro < canciones.length - 1) {
+        crearSpan.textContent = `${canciones[indiceFiltro + 1].nombre} - ${canciones[indiceFiltro + 1].artista}`
+        indiceInicio = canciones[indiceFiltro + 1].id;
+        console.log(canciones[indiceFiltro + 1].url);
+        reproductorMusica.src = canciones[indiceFiltro + 1].url;
+        reproductorMusica.play()
       }
-
     }
 
     function cancionAtras() {
-      let resultadoFiltro = canciones.filter((tema) => { return reproductorMusica.src.includes(tema.nombre.slice(0, tema.nombre.indexOf(" "))) && reproductorMusica.src.includes(tema.artista.slice(0, tema.artista.indexOf(" "))) });
-      let indiceCancion = canciones.indexOf((resultadoFiltro[0]));
-      if (indiceCancion > 0) {
-        reproductorMusica.src = `${canciones[indiceCancion - 1].url}`;
-        reproductorMusica.play();
-        botonPlay.style.display = "none";
-        botonPause.style.display = "block";
-        crearSpan.setAttribute("id", "spanReproductor")
-        crearSpan.textContent = `${canciones[indiceCancion - 1].nombre} - ${canciones[indiceCancion - 1].artista}`;
+      let indiceFiltro = canciones.findIndex((song) => song.id === indiceInicio)
+      if (indiceFiltro > 0) {
+        crearSpan.textContent = `${canciones[indiceFiltro - 1].nombre} - ${canciones[indiceFiltro - 1].artista}`
+        indiceInicio = canciones[indiceFiltro - 1].id;
+        console.log(canciones[indiceFiltro - 1].url);
+        reproductorMusica.src = canciones[indiceFiltro - 1].url;
+        reproductorMusica.play()
       }
     }
 
-    botonNextReproductor.removeEventListener("click", cancionSiguiente)
+    botonNextReproductor.removeEventListener("click", cancionSiguiente);
     botonNextReproductor.addEventListener("click", cancionSiguiente);
-
+    botonAtrasReproductor.removeEventListener("click", cancionAtras);
+    botonAtrasReproductor.addEventListener("click",cancionAtras);
   })
 
 });

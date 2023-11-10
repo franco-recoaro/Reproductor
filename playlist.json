@@ -1,76 +1,84 @@
 [
   {
     "nombre": "Mi Musica",
-    "id": "1",
     "Listados": [
       {
         "nombre": "Amorfoda",
         "url": "./Songs/Bad Bunny - Amorfoda.mp3",
-        "artista": "Bad Bunny"
+        "artista": "Bad Bunny",
+        "id": 1
       },
       {
         "nombre": "Columbia",
         "url": "./Songs/Quevedo - Columbia.mp3",
-        "artista": "Quevedo"
+        "artista": "Quevedo",
+        "id": 2
       },
       {
         "nombre": "Un tiempo jajaja",
         "url": "./Songs/Rels B - Un tiempo jajaja.mp3",
-        "artista": "Rels B"
+        "artista": "Rels B",
+        "id": 3
       },
       {
         "nombre": "Milo J: Bzrp Music Sessions, Vol. 57",
         "url": "./Songs/MILO J - Milo J Bzrp Music Sessions Vol 57.mp3",
-        "artista": "Milo J"
+        "artista": "Milo J",
+        "id": 4
       },
       {
         "nombre": "Toy en el Mic",
         "url": "./Songs/MILO J - Toy en el Mic.mp3",
-        "artista": "Milo J"
+        "artista": "Milo J",
+        "id": 5
       }
     ]
   },
 
   {
     "nombre": "Para Discoteca",
-    "id": "2",
     "Listados": [
       {
         "nombre": "Battery",
         "url": "./Songs/Metallica - Battery Remastered.mp3",
-        "artista": "Metallica"
+        "artista": "Metallica",
+        "id": 6
       },
       {
         "nombre": "Enter Sadman",
         "url": "./Songs/Metallica - Enter Sandman Remastered.mp3",
-        "artista": "Metallica"
+        "artista": "Metallica",
+        "id": 7
       },
       {
         "nombre": "Sad but true",
         "url": "./Songs/Metallica - Sad But True Remastered.mp3",
-        "artista": "Metallica"
+        "artista": "Metallica",
+        "id": 8
       },
       {
         "nombre": "The unforgiven",
         "url": "./Songs/Metallica - The Unforgiven Remastered.mp3",
-        "artista": "Metallica"
+        "artista": "Metallica",
+        "id": 9
       },
       {
         "nombre": "Fade to black",
         "url": "./Songs/Metallica - Fade To Black Remastered.mp3",
-        "artista": "Metallica"
+        "artista": "Metallica",
+        "id": 10
       }
     ]
   },
 
   {
     "nombre": "Relajante",
-    "id": "3",
     "Listados": [
       {
         "nombre": "Changes",
         "url": "./Songs/2Pac - Changes.mp3",
-        "artista": "2pac"
+        "artista": "2pac",
+        "id": 11
       },
       {
         "nombre": "A tout le monde",
@@ -80,113 +88,128 @@
       {
         "nombre": "Invisible",
         "url": "./Songs/U2 - Invisible.mp3",
-        "artista": "U2"
+        "artista": "U2",
+        "id": 13
       },
       {
         "nombre": "Ordinary Love",
         "url": "./Songs/U2 - Ordinary Love.mp3",
-        "artista": "U2"
+        "artista": "U2",
+        "id": 14
       },
       {
         "nombre": "Stay (Faraway, So Close!)",
         "url": "./Songs/U2 -  Stay Faraway So Close.mp3",
-        "artista": "U2"
+        "artista": "U2",
+        "id": 15
       }
     ]
   },
 
   {
     "nombre": "Ritmos Latinos",
-    "id": "4",
     "Listados": [
       {
         "nombre": "Russian Strings",
         "url": "./Songs/BLUR - Russian Strings.mp3",
-        "artista": "Blur"
+        "artista": "Blur",
+        "id": 16
       },
       {
         "nombre": "The Everglades (For Leonard)",
         "url": "./Songs/BLUR - The Everglades For Leonard.mp3",
-        "artista": "Blur"
+        "artista": "Blur",
+        "id": 17
       },
       {
         "nombre": "Goodbye Albert",
         "url": "./Songs/BLUR - Goodbye Albert.mp3",
-        "artista": "Blur"
+        "artista": "Blur",
+        "id": 18
       },
       {
         "nombre": "Vertigo",
         "url": "./Songs/U2 - Vertigo.mp3",
-        "artista": "U2"
+        "artista": "U2",
+        "id": 19
       },
       {
         "nombre": "City of Blinding Lights",
         "url": "./Songs/U2 - City Of Blinding Lights.mp3",
-        "artista": "U2"
+        "artista": "U2",
+        "id": 20
       }
     ]
   },
 
   {
     "nombre": "Techno - Electronic",
-    "id": "5",
     "Listados": [
       {
         "nombre": "No se si tu no",
         "url": "Url Cancion 38",
-        "artista": "Rels B"
+        "artista": "Rels B",
+        "id": 21
       },
       {
         "nombre": "Baby BOO",
         "url": "Url Cancion 39",
-        "artista": "Rels B"
+        "artista": "Rels B",
+        "id": 22
       },
       {
         "nombre": "Media Pastiii",
         "url": "Url Cancion 40",
-        "artista": "Rels B"
+        "artista": "Rels B",
+        "id": 23
       },
       {
         "nombre": "Fruto",
         "url": "Url Cancion 42",
-        "artista": "Milo J"
+        "artista": "Milo J",
+        "id": 24
       },
       {
         "nombre": "Penas de Antaño",
         "url": "Url Cancion 43",
-        "artista": "Milo J"
+        "artista": "Milo J",
+        "id": 25
       }
     ]
   },
 
   {
     "nombre": "Variado",
-    "id": "6",
     "Listados": [
       {
         "nombre": "No se si tu no",
         "url": "Url Cancion 38",
-        "artista": "Rels B"
+        "artista": "Rels B",
+        "id": 26
       },
       {
         "nombre": "Baby BOO",
         "url": "Url Cancion 39",
-        "artista": "Rels B"
+        "artista": "Rels B",
+        "id": 27
       },
       {
         "nombre": "Media Pastiii",
         "url": "Url Cancion 40",
-        "artista": "Rels B"
+        "artista": "Rels B",
+        "id": 28
       },
       {
         "nombre": "Fruto",
         "url": "Url Cancion 42",
-        "artista": "Milo J"
+        "artista": "Milo J",
+        "id": 29
       },
       {
         "nombre": "Penas de Antaño",
         "url": "Url Cancion 43",
-        "artista": "Milo J"
+        "artista": "Milo J",
+        "id": 30
       }
     ]
   }

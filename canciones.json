@@ -2,575 +2,678 @@
     {
       "nombre": "Amorfoda",
       "url": "./Songs/Bad Bunny - Amorfoda.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 1
     },
     {
       "nombre": "Columbia",
       "url": "./Songs/Quevedo - Columbia.mp3",
-      "artista": "Quevedo"
+      "artista": "Quevedo",
+      "id": 2
     },
     {
       "nombre": "Changes",
       "url": "./Songs/2Pac - Changes.mp3",
-      "artista": "2pac"
+      "artista": "2pac",
+      "id": 3
     },
     {
       "nombre": "A tout le monde",
       "url": "./Songs/Megadeth - A tout le monde.mp3",
-      "artista": "Megadeth"
+      "artista": "Megadeth",
+      "id": 4
     },
     {
       "nombre": "Battery",
       "url": "./Songs/Metallica - Battery Remastered.mp3",
-      "artista": "Metallica"
+      "artista": "Metallica",
+      "id": 5
     },
     {
       "nombre": "Enter Sadman",
       "url": "./Songs/Metallica - Enter Sandman Remastered.mp3",
-      "artista": "Metallica"
+      "artista": "Metallica",
+      "id": 6
     },
     {
       "nombre": "Sad but true",
       "url": "./Songs/Metallica - Sad But True Remastered.mp3",
-      "artista": "Metallica"
-    },
-    {
-      "nombre": "Aquí te espero",
-      "url": "./Songs/Abel Pintos - Aquí Te Espero.mp3",
-      "artista": "Abel Pintos"
+      "artista": "Metallica",
+      "id": 7
     },
     {
       "nombre": "Back to Black",
       "url": "./Songs/Amy Winehouse - Back To Black.mp3",
-      "artista": "Amy Winehouse"
+      "artista": "Amy Winehouse",
+      "id": 9
     },
     {
       "nombre": "You know im no good",
       "url": "./Songs/Amy Winehouse - You Know Im No Good.mp3",
-      "artista": "Amy Winehouse"
+      "artista": "Amy Winehouse",
+      "id": 10
     },
     {
       "nombre": "Por una cabeza",
       "url": "./Songs/Carlos Gardel - Por una Cabeza.mp3",
-      "artista": "Carlos Gardel"
+      "artista": "Carlos Gardel",
+      "id": 11
     },
     {
       "nombre": "Accidentally In Love",
       "url": "./Songs/City Sessions - Accidentally In Love.mp3",
-      "artista": "City Sessions"
+      "artista": "City Sessions",
+      "id": 12
     },
     {
       "nombre": "Another Love",
       "url": "./Songs/City Sessions - Another Love.mp3",
-      "artista": "City Sessions"
+      "artista": "City Sessions",
+      "id": 13
     },
     {
       "nombre": "Boulevard Of Broken",
       "url": "./Songs/City Sessions - Boulevard Of Broken Dreams.mp3",
-      "artista": "City Sessions"
+      "artista": "City Sessions",
+      "id": 14
     },
     {
       "nombre": "Dont you Worry Child",
       "url": "./Songs/City Sessions - Dont You Worry Child.mp3",
-      "artista": "City Sessions"
+      "artista": "City Sessions",
+      "id": 15
     },{
       "nombre": "Blinding Lights",
       "url": "./Songs/City Sessions - Blinding Lights.mp3",
-      "artista": "City Sessions"
+      "artista": "City Sessions",
+      "id": 16
     },
     {
       "nombre": "Lose Yourself",
       "url": "./Songs/City Sessions - Lose Yourself.mp3",
-      "artista": "City Sessions"
+      "artista": "City Sessions",
+      "id": 17
     },
     {
       "nombre": "No te creas tan importante",
       "url": "./Songs/Damas Gratis - No Te Creas Tan Importante.mp3",
-      "artista": "Damas Gratis"
+      "artista": "Damas Gratis",
+      "id": 18
     },
     {
       "nombre": "Cant Help Falling in Love",
       "url": "./Songs/Elvis Presley - Cant Help Falling In Love.mp3",
-      "artista": "Elvis Presley"
+      "artista": "Elvis Presley",
+      "id": 19
     },
     {
       "nombre": "Fly me to the moon",
       "url": "./Songs/Frank Sinatra - Fly Me To The Moon.mp3",
-      "artista": "Frank Sinatra"
+      "artista": "Frank Sinatra",
+      "id": 20
     },
     {
       "nombre": "I will survive",
       "url": "./Songs/Gloria Gaynor - I Will Survive.mp3",
-      "artista": "Gloria Gaynor"
+      "artista": "Gloria Gaynor",
+      "id": 21
     },
     {
       "nombre": "Dont cry",
       "url": "./Songs/Guns and Roses - Dont Cry.mp3",
-      "artista": "Guns and Roses"
+      "artista": "Guns and Roses",
+      "id": 22
     },
     {
       "nombre": "Crimenes Perfectos",
       "url": "./Songs/Gustavo Cerati - Crimenes perfectos.mp3",
-      "artista": "Gustavo Cerati"
+      "artista": "Gustavo Cerati",
+      "id": 23
     },
     {
       "nombre": "Holding out for a hero",
       "url": "./Songs/Bonnie Tyler - Holding Out for a Hero.mp3",
-      "artista": "Bonnie Tyler"
+      "artista": "Bonnie Tyler",
+      "id": 24
     },
     {
       "nombre": "La vie en rose",
       "url": "./Songs/Louis Armstrong - La vie en rose.mp3",
-      "artista": "Louis Armstrong"
+      "artista": "Louis Armstrong",
+      "id": 25
     },
     {
       "nombre": "CORAZON VACIO",
       "url": "./Songs/Maria Becerra - CORAZON VACIO.mp3",
-      "artista": "Maria Becerra"
+      "artista": "Maria Becerra",
+      "id": 26
     },
     {
       "nombre": "Creep",
       "url": "./Songs/Radiohead - Creep.mp3",
-      "artista": "Radiohead"
+      "artista": "Radiohead",
+      "id": 27
     },
     {
       "nombre": "Hit the road jack",
       "url": "./Songs/Ray Charles - Hit the Road Jack.mp3",
-      "artista": "Ray Charles"
+      "artista": "Ray Charles",
+      "id": 28
     },
     {
       "nombre": "Californication",
       "url": "./Songs/Red Hot Chili Peppers - Californication.mp3",
-      "artista": "Red hot chili pappers"
+      "artista": "Red hot chili pappers",
+      "id": 29
     },
     {
       "nombre": "Still Loving You",
       "url": "./Songs/Scorpions - Still Loving You.mp3",
-      "artista": "Scorpions"
+      "artista": "Scorpions",
+      "id": 30
     },
     {
       "nombre": "Sweet child o'mine",
       "url": "./Songs/Sheryl Crow - Sweet Child O Mine.mp3",
-      "artista": "Sheryl Crow"
+      "artista": "Sheryl Crow",
+      "id": 31
     },
     {
       "nombre": "Seguir viviendo sin tu amor",
       "url": "./Songs/Spinetta - Seguir Viviendo Sin Tu Amor.mp3",
-      "artista": "Spinetta"
+      "artista": "Spinetta",
+      "id": 32
     },
     {
       "nombre": "Stand by me",
       "url": "./Songs/Stand by Me - Ben E King.mp3",
-      "artista": "Ben E King"
+      "artista": "Ben E King",
+      "id": 33
     },
     {
       "nombre": "Until i found you",
       "url": "./Songs/Stephen Sanchez - Until I Found You.mp3",
-      "artista": "Stephen Sanchez"
+      "artista": "Stephen Sanchez",
+      "id": 34
     },
     {
       "nombre": "I just called to say i love you",
       "url": "./Songs/Stevie Wonder - I Just Called To Say I love you.mp3",
-      "artista": "Stevie Wonder"
+      "artista": "Stevie Wonder",
+      "id": 35
     },
     {
       "nombre": "Sweater Weather",
       "url": "./Songs/City Sessions - Sweater Weather.mp3",
-      "artista": "City Sessions"
+      "artista": "City Sessions",
+      "id": 36
     },
     {
       "nombre": "Milo J: Bzrp Music Sessions, Vol. 57",
       "url": "./Songs/MILO J - Milo J Bzrp Music Sessions Vol 57.mp3",
-      "artista": "Milo J"
+      "artista": "Milo J",
+      "id": 37
     },
     {
       "nombre": "The unforgiven",
       "url": "./Songs/Metallica - The Unforgiven Remastered.mp3",
-      "artista": "Metallica"
+      "artista": "Metallica",
+      "id": 38
     },
     {
       "nombre": "Fade to black",
       "url": "./Songs/Metallica - Fade To Black Remastered.mp3",
-      "artista": "Metallica"
+      "artista": "Metallica",
+      "id": 39
     },
     {
       "nombre": "Stay (Faraway, So Close!)",
       "url": "./Songs/U2 -  Stay Faraway So Close.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 40
     },
     {
       "nombre": "Vertigo",
       "url": "./Songs/U2 - Vertigo.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 41
     },
     {
       "nombre": "City of Blinding Lights",
       "url": "./Songs/U2 - City Of Blinding Lights.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 42
     },
     {
       "nombre": "NADIE SABE",
       "url": "./Songs/Bad Bunny - NADIE SABE.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 43
     },
     {
       "nombre": "MONACO",
       "url": "./Songs/Bad Bunny - MONACO.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 44
     },
     {
       "nombre": "FINA",
       "url": "./Songs/Bad Bunny - FINA.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 45
     },
     {
       "nombre": "HIBIKI",
       "url": "./Songs/Bad Bunny - HIBIKI.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 46
     },
     {
       "nombre": "MR. OCTOBER",
       "url": "./Songs/Bad Bunny - MR OCTOBER.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 47
     },
     {
       "nombre": "CYBERTRUCK",
       "url": "./Songs/Bad Bunny - CYBERTRUCK.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 48
     },
     {
       "nombre": "VOU 787",
       "url": "./Songs/Bad Bunny -  VOU 787.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 49
     },
     {
       "nombre": "SEDA",
       "url": "./Songs/Bad Bunny -  SEDA.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 50
     },
     {
       "nombre": "GRACIAS POR NADA",
       "url": "./Songs/Bad Bunny - GRACIAS POR NADA.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 51
     },
     {
       "nombre": "TELEFONO NUEVO",
       "url": "./Songs/Bad Bunny - TELEFONO NUEVO.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 52
     },
     {
       "nombre": "BABY NUEVA",
       "url": "./Songs/Bad Bunny - BABY NUEVA.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 53
     },
     {
       "nombre": "MERCEDES CAROTA",
       "url": "./Songs/Bad Bunny -  MERCEDES CAROTA.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 54
     },
     {
       "nombre": "LOS PITS",
       "url": "./Songs/Bad Bunny -  LOS PITS.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 55
     },
     {
       "nombre": "VUELVE CANDY B",
       "url": "./Songs/Bad Bunny - VUELVE CANDY B.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 56
     },
     {
       "nombre": "BATICANO",
       "url": "./Songs/Bad Bunny - BATICANO.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 57
     },
     {
       "nombre": "NO ME QUIERO CASAR",
       "url": "./Songs/Bad Bunny - NO ME QUIERO CASAR.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 58
     },
     {
       "nombre": "WHERE SHE GOES",
       "url": "./Songs/Bad Bunny -  WHERE SHE GOES.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 59
     },
     {
       "nombre": "THUNDER Y LIGHTNING",
       "url": "./Songs/Bad Bunny - THUNDER Y LIGHTNING.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 60
     },
     {
       "nombre": "PERRO NEGRO",
       "url": "./Songs/Bad Bunny - PERRO NEGRO.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 61
     },
     {
       "nombre": "EUROPA :(",
       "url": "./Songs/Bad Bunny - EUROPA.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 62
     },
     {
       "nombre": "ACHO PR",
       "url": "./Songs/Bad Bunny - ACHO PR.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 63
     },
     {
       "nombre": "UN PREVIEW",
       "url": "./Songs/Bad Bunny -  UN PREVIEW.mp3",
-      "artista": "Bad Bunny"
+      "artista": "Bad Bunny",
+      "id": 64
     },
     {
       "nombre": "Un tiempo jajaja",
       "url": "./Songs/Rels B - Un tiempo jajaja.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 65
     },
     {
       "nombre": "Solita y SueltAAA",
       "url": "./Songs/Rels B - Solita y SueltAAA.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 66
     },
     {
       "nombre": "AfroLOVA'",
       "url": "./Songs/Rels B - AfroLOVA.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 67
     },
     {
       "nombre": "Un Rodeoooo",
       "url": "./Songs/Rels B - Un Rodeoooo.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 68
     },
     {
       "nombre": "Sin Gato(MIAU!)",
       "url": "./Songs/Rels B - Sin Gato MIAU.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 69
     },
     {
       "nombre": "SONRÍE <3",
       "url": "./Songs/Rels B - SONRÍE.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 70
     },
     {
       "nombre": "No se si tu no",
       "url": "./Songs/Rels B - No Se Si Tu No.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 71
     },
     {
       "nombre": "Baby BOO",
       "url": "./Songs/Rels B - baby BOO.mp3",
-      "artista": "Rels B"
+      "artista": "Rels B",
+      "id": 72
     },
     {
       "nombre": "Media Pastiii",
       "url": "./Songs/Rels B - Media Pastiii.mp3",
-      "artista": "Rels B"
-    },
-    {
-      "nombre": "Milo J: Bzrp Music Sessions, Vol. 57",
-      "url": "./Songs/MILO J - Milo J Bzrp Music Sessions Vol 57.mp3",
-      "artista": "Milo J"
+      "artista": "Rels B",
+      "id": 73
     },
     {
       "nombre": "Fruto",
       "url": "./Songs/MILO J - Fruto.mp3",
-      "artista": "Milo J"
+      "artista": "Milo J",
+      "id": 75
     },
     {
       "nombre": "Penas de Antaño",
       "url": "./Songs/MILO J - Penas de Antaño.mp3",
-      "artista": "Milo J"
+      "artista": "Milo J",
+      "id": 76
     },
     {
       "nombre": "No soy Eterno",
       "url": "./Songs/MILO J - No soy Eterno.mp3",
-      "artista": "Milo J"
+      "artista": "Milo J",
+      "id": 77
     },
     {
       "nombre": "Toy en el Mic",
       "url": "./Songs/MILO J - Toy en el Mic.mp3",
-      "artista": "Milo J"
+      "artista": "Milo J",
+      "id": 78
     },
     {
       "nombre": "If God Will Send His Angels",
       "url": "./Songs/U2 - If God Will Send His Angels.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 79
     },
     {
       "nombre": "Stories for Boys",
       "url": "./Songs/U2 - Stories For Boys.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 80
     },
     {
       "nombre": "One",
       "url": "./Songs/U2 - One.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 81
     },
     {
       "nombre": "Where the Streets Have No Name",
       "url": "./Songs/U2 - Where The Streets Have No Name.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 82
     },
     {
       "nombre": "“40”",
       "url": "./Songs/U2 -  40.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 83
     },
     {
       "nombre": "Walk On (Ukraine)",
       "url": "./Songs/U2 - Walk On Ukraine.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 84
     },
     {
       "nombre": "I Will Follow",
       "url": "./Songs/U2 - I Will Follow.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 85
     },
     {
       "nombre": "The Fly",
       "url": "./Songs/U2 - The Fly.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 86
     },
     {
       "nombre": "I Still Haven’t Found What I’m Looking For",
       "url": "./Songs/U2 -  I Still Havent Found What Im Looking For.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 87
     },
     {
       "nombre": "Sunday Bloody Sunday",
       "url": "./Songs/U2 - Sunday Bloody Sunday.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 88
     },
     {
       "nombre": "Invisible",
       "url": "./Songs/U2 - Invisible.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 89
     },
     {
       "nombre": "Ordinary Love",
       "url": "./Songs/U2 - Ordinary Love.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 90
     },
     {
       "nombre": "Pride (In the Name of Love)",
       "url": "./Songs/U2 -  Pride In The Name Of Love.mp3",
-      "artista": "U2"
+      "artista": "U2",
+      "id": 91
     },
     {
       "nombre": "Brillante Sobre el Mic",
       "url": "./Songs/FITO PAEZ -  Brillante Sobre el Mic  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 92
     },
     {
       "nombre": "Tráfico por Katmandú",
       "url": "./Songs/FITO PAEZ - Tráfico por Katmandú  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 93
     },
     {
       "nombre": "Dos Días en la Vida",
       "url": "./Songs/FITO PAEZ - Dos Días en la Vida  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 94
     },
     {
       "nombre": "La Balada de Donna Helena",
       "url": "./Songs/FITO PAEZ -  La Balada de Donna Helena  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 95
     },
     {
       "nombre": "Sasha, Sissi y el Círculo de Baba",
       "url": "./Songs/FITO PAEZ -  Sasha Sissi y el Círculo de Baba  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 96
     },
     {
       "nombre": "Tumbas de la Gloria",
       "url": "./Songs/FITO PAEZ - Tumbas de la Gloria  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 97
     },
     {
       "nombre": "Detrás del Muro de los Lamentos",
       "url": "./Songs/FITO PAEZ - Detrás del Muro de los Lamentos  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 98
     },
     {
       "nombre": "La Rueda Mágica",
       "url": "./Songs/FITO PAEZ - La Rueda Mágica  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 99
     },
     {
       "nombre": "El Amor Después del Amor",
       "url": "./Songs/FITO PAEZ -  El Amor Después del Amor  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 100
     },
     {
       "nombre": "Un Vestido y un Amor",
       "url": "./Songs/FITO PAEZ - Un Vestido y un Amor  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 101
     },
     {
       "nombre": "La Verónica",
       "url": "./Songs/FITO PAEZ -  La Verónica  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 102
     },
     {
       "nombre": "Pétalo de Sal",
       "url": "./Songs/FITO PAEZ - Pétalo de Sal  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 103
     },
     {
       "nombre": "A Rodar Mi Vida",
       "url": "./Songs/FITO PAEZ - A Rodar Mi Vida.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 104
     },
     {
       "nombre": "Creo",
       "url": "./Songs/FITO PAEZ -  Creo  EADDA9223.mp3",
-      "artista": "Fito Páez"
+      "artista": "Fito Páez",
+      "id": 105
     },
     {
       "nombre": "Russian Strings",
       "url": "./Songs/BLUR - Russian Strings.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 106
     },
     {
       "nombre": "The Everglades (For Leonard)",
       "url": "./Songs/BLUR - The Everglades For Leonard.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id":107
     },
     {
       "nombre": "Goodbye Albert",
       "url": "./Songs/BLUR - Goodbye Albert.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 108
     },
     {
       "nombre": "The Heights",
       "url": "./Songs/BLUR - The Heights.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 109
     },
     {
       "nombre": "St. Charles Square",
       "url": "./Songs/BLUR - St Charles Square.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 110
     },
     {
       "nombre": "The Ballad",
       "url": "./Songs/BLUR - The Ballad.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 111
     },
     {
       "nombre": "Far Away Island",
       "url": "./Songs/BLUR - Far Away Island.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 112
     },
     {
       "nombre": "Barbaric",
       "url": "./Songs/BLUR - Barbaric.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 113
     },
     {
       "nombre": "The Narcissist",
       "url": "./Songs/BLUR - The Narcissist.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 114
     },
     {
       "nombre": "Avalon",
       "url": "./Songs/BLUR - Avalon.mp3",
-      "artista": "Blur"
+      "artista": "Blur",
+      "id": 115
     }
   ]
