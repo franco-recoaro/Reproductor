@@ -318,7 +318,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
     width: 300px;
     background-color: rgba(49, 48, 48, 0.5);
     position: absolute;
@@ -368,6 +368,7 @@ label{
 
 #botonLogin{
     margin-top: 20px;
+    margin-bottom: 20px;
     height: 50px;
     width: 50%;
     background-color: #7a2fa9;
@@ -375,6 +376,14 @@ label{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+}
+
+form a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 5px;
 }
 
 /*********REGISTRO********/
