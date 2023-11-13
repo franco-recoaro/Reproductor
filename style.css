@@ -283,25 +283,25 @@ body::-webkit-scrollbar-thumb {
 
 /*********** REGISTRO Y LOGIN **************/
 
-.reg {
+#inicioReg {
     color: white;
     background-color: #7a2fa9;
     width: 100px;
 }
 
-.reg:hover {
+#inicioReg:hover {
     color: white;
     background-color: rgba(104, 103, 103, 0.5);
 }
 
-.log {
+#inicioLogin {
     color: white;
     background-color: rgba(104, 103, 103, 0.1);
     width: 100px;
     margin-right: 10px;
 }
 
-.log:hover {
+#inicioLogin:hover {
     background-color: #7a2fa9;
     ;
 }
@@ -393,7 +393,7 @@ form a{
     height: 500px;
 }
 
-#formularioMailReg, #formularioPassReg{
+#formularioMailReg, #formularioPassReg, #formularioPassReg2{
     display: block;
     height: 50px;
     width: 70%;

@@ -109,35 +109,35 @@
                 </div>
 
                 <div>
-                    <button class="log">Login</button>
-                    <form id="login" class="login">
+                    <button id="inicioLogin">Login</button>
+                    <form id="login" class="login" autocomplete="off">
                         <h3>Login</h3>
                 
                         <label for="username">Username</label>
-                        <input id="formularioMail" type="text" placeholder="Email or Phone">
+                        <input id="formularioMail" type="text" placeholder="Email">
                 
                         <label for="password">Password</label>
-                        <input id="formularioPass" type="password" placeholder="Password">
+                        <input id="formularioPass" type="password" placeholder="Password" autocomplete="off">
                 
-                        <button id="botonLogin">Log In</button>
+                        <input id="botonSubmitLogin" type="submit" value="enviar">Log In
                         <a href="#">Forgot Password?</a>
                         <a href="#">Don't have an account?</a>
                     </form>
 
-                    <button class="reg">Sign Up</button>
+                    <button id="inicioReg">Sign Up</button>
 
-                    <form id="registro">
+                    <form id="registro" autocomplete="off">
                         <h3>Sign Up</h3>
                         <label for="username">Username</label>
                         <input id="formularioMailReg" type="text" placeholder="Email or Phone">
 
                         <label for="password">Password</label>
-                        <input id="formularioPassReg" type="password" placeholder="Password">
+                        <input id="formularioPassReg" type="password" placeholder="Password" autocomplete="off">
 
                         <label for="password">Repeat Password</label>
-                        <input id="formularioPassReg" type="password" placeholder="Repeat Password">
+                        <input id="formularioPassReg2" type="password" placeholder="Repeat Password" autocomplete="off">
 
-                        <button id="botonRegistro">Sign Up</button>
+                        <input id="botonRegistro" type="submit" value="enviar">Sign Up
 
                     </form>
                    

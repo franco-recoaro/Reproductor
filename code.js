@@ -459,5 +459,27 @@ buscadorCancion.addEventListener("input", (e) => {
     renderizadoSecundario.appendChild(listaInput)
   }
 });
+/*******************************************LOGIN Y SIGNUP********************************************/
+let botonLogin = document.querySelector("#inicioLogin");
+let loginFormulario = document.querySelector("#login");
+let inputUserLogin = document.querySelector("#formularioMail");
+let inputPassLogin = document.querySelector("#formularioPass");
+let enviarLogin = document.querySelector("#botonSubmitLogin");
+
+
+botonLogin.addEventListener("click", () => {
+loginFormulario.style.display="flex";
+});
+
+let botonReg = document.querySelector("#inicioReg");
+let signupFormulario = document.querySelector("#registro");
+let inputUserRegistro = document.querySelector("#formularioMailReg");
+let inputPassRegistro = document.querySelector("#formularioPassReg");
+let inputPass2Registro = document.querySelector("#formularioPassReg2");
+let enviarRegistro = document.querySelector("#botonRegistro");
+
+botonReg.addEventListener("click", () => {
+  signupFormulario.style.display="flex";
+})
 
 /**************************************PASAR DE CANCION ************************************************/
