@@ -386,6 +386,18 @@ form a{
     margin-top: 5px;
 }
 
+#botonSubmitLogin{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50%;
+    background-color: #7a2fa9;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /*********REGISTRO********/
 
 #registro{
