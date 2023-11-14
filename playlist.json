@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Mi Musica",
-    "Listados": [
+    "listado": [
       {
         "nombre": "Amorfoda",
         "url": "./Songs/Bad Bunny - Amorfoda.mp3",

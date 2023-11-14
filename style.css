@@ -311,6 +311,7 @@ body::-webkit-scrollbar-thumb {
 
 #login{
     display: none;
+    position: fixed;
 }
 
 form{
@@ -389,8 +390,8 @@ form a{
 #botonSubmitLogin{
     margin-top: 20px;
     margin-bottom: 10px;
-    height: 50px;
-    width: 50%;
+    height: 40px;
+    width: 80px;
     background-color: #7a2fa9;
     color: #ffffff;
     font-weight: 600;
@@ -403,6 +404,7 @@ form a{
 #registro{
     display: none;
     height: 500px;
+    position: fixed;
 }
 
 #formularioMailReg, #formularioPassReg, #formularioPassReg2{
@@ -422,8 +424,8 @@ form a{
 
 #botonRegistro{
     margin-top: 20px;
-    height: 50px;
-    width: 50%;
+    height: 40px;
+    width: 80px;
     background-color: #7a2fa9;
     color: #ffffff;
     font-weight: 600;
@@ -431,10 +433,21 @@ form a{
     cursor: pointer;
 }
 
+.enviarCancelar{
+    display: flex;
+    gap: 20px;
+}
 
-
-
-
+.botonCancelar{
+    margin-top: 20px;
+    height: 40px;
+    width: 80px;
+    background-color: #7a2fa9;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /**********BOTON ATRAS***********/
 
 .atrasBut {
