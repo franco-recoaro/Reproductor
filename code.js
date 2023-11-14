@@ -466,40 +466,56 @@ let botonLogin = document.querySelector("#inicioLogin");
 let loginFormulario = document.querySelector("#login");
 let inputUserLogin = document.querySelector("#formularioMail");
 let inputPassLogin = document.querySelector("#formularioPass");
-let enviarLogin = document.querySelector("#botonSubmitLogin");
-
+let botonLoginSubmit = document.querySelector("#botonSubmitLogin");
 
 botonLogin.addEventListener("click", () => {
 loginFormulario.style.display="flex";
 });
 
+let baseDatosLogin = JSON.parse(localStorage.getItem("usuarios"));
+
+console.log(baseDatosLogin);
+
+botonLoginSubmit.addEventListener("click", () => {
+  if(inputUserLogin.value === baseDatosLogin.user && inputPassLogin.value === baseDatosLogin.pass){
+    loginFormulario.style.display="none";
+    alert("Bienvenido Nuevamente")
+  }else{
+    alert("Credenciales incorrectas")
+  }
+})
+
+
+
 let botonReg = document.querySelector("#inicioReg");
 let signupFormulario = document.querySelector("#registro");
 let inputUserRegistro = document.querySelector("#formularioMailReg");
 let inputPassRegistro = document.querySelector("#formularioPassReg");
-let inputPass2Registro = document.querySelector("#formularioPassReg2");
-let enviarRegistro = document.querySelector("#botonRegistro");
 
 botonReg.addEventListener("click", () => {
   signupFormulario.style.display="flex";
 })
 
-let botonCancelarReg = document.querySelector("#botonCancelarReg");
-let botonCancelarLogin = document.querySelector("#botonCancelarLogin");
+let botonCancelar = document.querySelectorAll("#botonCancelar");
 
-botonCancelarReg.addEventListener("click", () => {
+botonCancelar.forEach(boton => {
+  boton.addEventListener("click", () => {
   if(signupFormulario.style.display="flex"){
     signupFormulario.style.display="none";
   }
-});
-
-botonCancelarLogin.addEventListener("click", () => {
   if(loginFormulario.style.display="flex"){
     loginFormulario.style.display="none";
   }
+});
 })
 
 
+signupFormulario.addEventListener("submit", (e) => {
+  let user = inputUserRegistro.value;
+  let pass = inputPassRegistro.value;
+  const guardarCuenta = (clave,valor) => { localStorage.setItem(clave,valor) }
+  guardarCuenta("usuarios",JSON.stringify({"user": user, "pass": pass}));
+  });
 
 
 /**************************************PASAR DE CANCION ************************************************/
