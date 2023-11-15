@@ -147,12 +147,73 @@ volume.addEventListener("change", (ev) => {
 })
 
 /*****************************************************RENDERIZAR ALBUMS*********************************************************/
+const divAlbums = document.querySelectorAll("#divAlbums");
 
+//CAMBIAR A PARTIR DE ACA 
 function renderizadoDeAlbums(){
 
-let indiceInicio;
+  let indiceInicio;
+  let indiceF;
+  let indiceFiltro;
+  let indiceFiltro2;
+  
+  function cancionSiguiente() {
+    playlist.forEach((song) => {
+      song.listado.forEach((c) => {
+        if (c.id === indiceInicio) {
+          indiceF = c;
+        }
+      });
+    });
+    indiceFiltro = playlist.findIndex((song) => {
+      return song.listado.includes(indiceF);
+    });
+    indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
+      return c.id === indiceF.id;
+    });
+    if (indiceFiltro2 < playlist[indiceFiltro].listado.length - 1) {
+      indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 + 1].id;
+      reproductorMusica.src =
+        playlist[indiceFiltro].listado[indiceFiltro2 + 1].url;
+      reproductorMusica.play();
+      botonPlay.style.display = "none";
+      botonPause.style.display = "block";
+      crearSpan.textContent = `${
+        playlist[indiceFiltro].listado[indiceFiltro2 + 1].nombre
+      } - ${playlist[indiceFiltro].listado[indiceFiltro2 + 1].artista}`;
+    }
+  }
+  
+  function cancionAtras() {
+    playlist.forEach((song) => {
+      song.listado.forEach((c) => {
+        if (c.id === indiceInicio) {
+          indiceF = c;
+        }
+      });
+    });
+    indiceFiltro = playlist.findIndex((song) => {
+      return song.listado.includes(indiceF);
+    });
+    indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
+      return c.id === indiceF.id;
+    });
+  
+    if (indiceFiltro2 > 0) {
+      indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 - 1].id;
+      reproductorMusica.src =
+        playlist[indiceFiltro].listado[indiceFiltro2 - 1].url;
+      reproductorMusica.play();
+      botonPlay.style.display = "none";
+      botonPause.style.display = "block";
+      crearSpan.textContent = `${
+        playlist[indiceFiltro].listado[indiceFiltro2 - 1].nombre
+      } - ${playlist[indiceFiltro].listado[indiceFiltro2 - 1].artista}`;
+    }
+  }
+  
+//CAMBIAR HASTA ACA
 
-const divAlbums = document.querySelectorAll("#divAlbums");
 
 divAlbums.forEach((divsAlbunes) => {
   divsAlbunes.addEventListener("click", () => {
@@ -160,6 +221,16 @@ divAlbums.forEach((divsAlbunes) => {
     renderizadoPrimario.style.display = "none";
     renderizadoSecundario.style.display = "flex";
     crearSpan.setAttribute("id", "spanReproductor");
+
+    botonNextReproductor.removeEventListener("click", cancionSiguiente);
+    botonAtrasReproductor.removeEventListener("click", cancionAtras);
+    botonNextReproductor.addEventListener("click", cancionSiguiente);
+    botonAtrasReproductor.addEventListener("click", cancionAtras);
+
+    botonAtras.addEventListener("click", () => {
+      botonNextReproductor.removeEventListener("click", cancionSiguiente);
+      botonAtrasReproductor.removeEventListener("click", cancionAtras);
+    });
 
     let spanAlbumes = divsAlbunes.querySelector("span").textContent;
 
