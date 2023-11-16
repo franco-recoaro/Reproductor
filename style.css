@@ -25,6 +25,9 @@ body::-webkit-scrollbar-thumb {
     box-sizing: inherit;
 }
 
+button{
+    cursor: pointer;
+}
 /* CONTENEDOR GENERAL */
 .aplicacion {
     display: grid;
@@ -168,6 +171,7 @@ body::-webkit-scrollbar-thumb {
     color: white;
     background-color: transparent;
     padding-left: 30px;
+    cursor: pointer;
 }
 
 .cuadrosListas>span {
@@ -453,6 +457,7 @@ form a{
 .atrasBut {
     background-color: transparent;
     margin-left: 0px;
+    cursor: pointer;
 }
 
 .atrasBut>img:hover {
@@ -690,6 +695,7 @@ form a{
 
 audio {
     display: none;
+    cursor: pointer;
 }
 
 #botonPause {
