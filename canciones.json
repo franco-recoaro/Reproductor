@@ -18,7 +18,7 @@
       "id": 3
     },
     {
-      "nombre": "A tout le monde",
+      "nombre": "A Tout Le Monde",
       "url": "./Songs/Megadeth - A tout le monde.mp3",
       "artista": "Megadeth",
       "id": 4
@@ -36,7 +36,7 @@
       "id": 6
     },
     {
-      "nombre": "Sad but true",
+      "nombre": "Sad But True",
       "url": "./Songs/Metallica - Sad But True Remastered.mp3",
       "artista": "Metallica",
       "id": 7
@@ -48,13 +48,13 @@
       "id": 9
     },
     {
-      "nombre": "You know im no good",
+      "nombre": "You Know Im No Good",
       "url": "./Songs/Amy Winehouse - You Know Im No Good.mp3",
       "artista": "Amy Winehouse",
       "id": 10
     },
     {
-      "nombre": "Por una cabeza",
+      "nombre": "Por una Cabeza",
       "url": "./Songs/Carlos Gardel - Por una Cabeza.mp3",
       "artista": "Carlos Gardel",
       "id": 11
@@ -95,7 +95,7 @@
       "id": 17
     },
     {
-      "nombre": "No te creas tan importante",
+      "nombre": "No te Creas tan Importante",
       "url": "./Songs/Damas Gratis - No Te Creas Tan Importante.mp3",
       "artista": "Damas Gratis",
       "id": 18
@@ -107,19 +107,19 @@
       "id": 19
     },
     {
-      "nombre": "Fly me to the moon",
+      "nombre": "Fly me to the Moon",
       "url": "./Songs/Frank Sinatra - Fly Me To The Moon.mp3",
       "artista": "Frank Sinatra",
       "id": 20
     },
     {
-      "nombre": "I will survive",
+      "nombre": "I Will Survive",
       "url": "./Songs/Gloria Gaynor - I Will Survive.mp3",
       "artista": "Gloria Gaynor",
       "id": 21
     },
     {
-      "nombre": "Dont cry",
+      "nombre": "Dont Cry",
       "url": "./Songs/Guns and Roses - Dont Cry.mp3",
       "artista": "Guns and Roses",
       "id": 22
@@ -131,13 +131,13 @@
       "id": 23
     },
     {
-      "nombre": "Holding out for a hero",
+      "nombre": "Holding Out for a Hero",
       "url": "./Songs/Bonnie Tyler - Holding Out for a Hero.mp3",
       "artista": "Bonnie Tyler",
       "id": 24
     },
     {
-      "nombre": "La vie en rose",
+      "nombre": "La Vie en Rose",
       "url": "./Songs/Louis Armstrong - La vie en rose.mp3",
       "artista": "Louis Armstrong",
       "id": 25
@@ -155,7 +155,7 @@
       "id": 27
     },
     {
-      "nombre": "Hit the road jack",
+      "nombre": "Hit the Road Jack",
       "url": "./Songs/Ray Charles - Hit the Road Jack.mp3",
       "artista": "Ray Charles",
       "id": 28
@@ -163,7 +163,7 @@
     {
       "nombre": "Californication",
       "url": "./Songs/Red Hot Chili Peppers - Californication.mp3",
-      "artista": "Red hot chili pappers",
+      "artista": "Red hot Chili Pappers",
       "id": 29
     },
     {
@@ -173,31 +173,31 @@
       "id": 30
     },
     {
-      "nombre": "Sweet child o'mine",
+      "nombre": "Sweet Child O'mine",
       "url": "./Songs/Sheryl Crow - Sweet Child O Mine.mp3",
       "artista": "Sheryl Crow",
       "id": 31
     },
     {
-      "nombre": "Seguir viviendo sin tu amor",
+      "nombre": "Seguir Viviendo Sin tu Amor",
       "url": "./Songs/Spinetta - Seguir Viviendo Sin Tu Amor.mp3",
       "artista": "Spinetta",
       "id": 32
     },
     {
-      "nombre": "Stand by me",
+      "nombre": "Stand by Me",
       "url": "./Songs/Stand by Me - Ben E King.mp3",
       "artista": "Ben E King",
       "id": 33
     },
     {
-      "nombre": "Until i found you",
+      "nombre": "Until I Found You",
       "url": "./Songs/Stephen Sanchez - Until I Found You.mp3",
       "artista": "Stephen Sanchez",
       "id": 34
     },
     {
-      "nombre": "I just called to say i love you",
+      "nombre": "I Just Called to Say I Love You",
       "url": "./Songs/Stevie Wonder - I Just Called To Say I love you.mp3",
       "artista": "Stevie Wonder",
       "id": 35
@@ -215,13 +215,13 @@
       "id": 37
     },
     {
-      "nombre": "The unforgiven",
+      "nombre": "The Unforgiven",
       "url": "./Songs/Metallica - The Unforgiven Remastered.mp3",
       "artista": "Metallica",
       "id": 38
     },
     {
-      "nombre": "Fade to black",
+      "nombre": "Fade to Black",
       "url": "./Songs/Metallica - Fade To Black Remastered.mp3",
       "artista": "Metallica",
       "id": 39

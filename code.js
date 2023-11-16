@@ -158,57 +158,57 @@ function renderizadoDeAlbums(){
   let indiceFiltro2;
   
   function cancionSiguiente() {
-    playlist.forEach((song) => {
+    albums.forEach((song) => {
       song.listado.forEach((c) => {
         if (c.id === indiceInicio) {
           indiceF = c;
         }
       });
     });
-    indiceFiltro = playlist.findIndex((song) => {
+    indiceFiltro = albums.findIndex((song) => {
       return song.listado.includes(indiceF);
     });
-    indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
+    indiceFiltro2 = albums[indiceFiltro].listado.findIndex((c) => {
       return c.id === indiceF.id;
     });
-    if (indiceFiltro2 < playlist[indiceFiltro].listado.length - 1) {
-      indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 + 1].id;
+    if (indiceFiltro2 < albums[indiceFiltro].listado.length - 1) {
+      indiceInicio = albums[indiceFiltro].listado[indiceFiltro2 + 1].id;
       reproductorMusica.src =
-        playlist[indiceFiltro].listado[indiceFiltro2 + 1].url;
+        albums[indiceFiltro].listado[indiceFiltro2 + 1].url;
       reproductorMusica.play();
       botonPlay.style.display = "none";
       botonPause.style.display = "block";
       crearSpan.textContent = `${
-        playlist[indiceFiltro].listado[indiceFiltro2 + 1].nombre
-      } - ${playlist[indiceFiltro].listado[indiceFiltro2 + 1].artista}`;
+        albums[indiceFiltro].listado[indiceFiltro2 + 1].nombre
+      } - ${albums[indiceFiltro].listado[indiceFiltro2 + 1].artista}`;
     }
   }
   
   function cancionAtras() {
-    playlist.forEach((song) => {
+    albums.forEach((song) => {
       song.listado.forEach((c) => {
         if (c.id === indiceInicio) {
           indiceF = c;
         }
       });
     });
-    indiceFiltro = playlist.findIndex((song) => {
+    indiceFiltro = albums.findIndex((song) => {
       return song.listado.includes(indiceF);
     });
-    indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
+    indiceFiltro2 = albums[indiceFiltro].listado.findIndex((c) => {
       return c.id === indiceF.id;
     });
   
     if (indiceFiltro2 > 0) {
-      indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 - 1].id;
+      indiceInicio = albums[indiceFiltro].listado[indiceFiltro2 - 1].id;
       reproductorMusica.src =
-        playlist[indiceFiltro].listado[indiceFiltro2 - 1].url;
+        albums[indiceFiltro].listado[indiceFiltro2 - 1].url;
       reproductorMusica.play();
       botonPlay.style.display = "none";
       botonPause.style.display = "block";
       crearSpan.textContent = `${
-        playlist[indiceFiltro].listado[indiceFiltro2 - 1].nombre
-      } - ${playlist[indiceFiltro].listado[indiceFiltro2 - 1].artista}`;
+        albums[indiceFiltro].listado[indiceFiltro2 - 1].nombre
+      } - ${albums[indiceFiltro].listado[indiceFiltro2 - 1].artista}`;
     }
   }
   
@@ -686,4 +686,3 @@ botonAtras.addEventListener("click", () => {
   }
 });
 
-/**************************************PASAR DE CANCION ************************************************/
