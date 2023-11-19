@@ -674,7 +674,7 @@ botonLoginSubmit.addEventListener("click", () => {
 })
 
 
-/***********************BOTON ATRAS*******************************/
+/********************************************BOTON ATRAS****************************************************/
 
 const botonAtras = document.querySelector(".atrasBut");
 
