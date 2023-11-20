@@ -2,73 +2,62 @@ import canciones from "./canciones.json" assert { type: "json" };
 import albums from "./albums.json" assert { type: "json" };
 import playlist from "./playlist.json" assert { type: "json" };
 
-
 const botonReproducir = document.querySelectorAll("#reproducir");
 const reproductorMusica = document.querySelector("audio");
 const botonPlay = document.querySelector("#botonPlay");
-const botonPause = document.querySelector("#botonPause")
+const botonPause = document.querySelector("#botonPause");
 const botonFiveNext = document.querySelector("#botonFiveNext");
 const botonStop = document.querySelector("#botonStop");
 const botonFiveBack = document.querySelector("#botonFiveBack");
-const botonAtrasReproductor = document.querySelector("#botonAtras")
-const botonNextReproductor = document.querySelector("#botonNext")
+const botonAtrasReproductor = document.querySelector("#botonAtras");
+const botonNextReproductor = document.querySelector("#botonNext");
 const volume = document.querySelector("#volume-control");
-const nombreCancionReproducida = document.querySelector("#nombreCancionReproducida");
+const nombreCancionReproducida = document.querySelector(
+  "#nombreCancionReproducida"
+);
 
-
-/********************************************************FUNCIONALIDADES REPRODUCTOR*******************************************************/
-
+/*********************************************FUNCIONALIDADES REPRODUCTOR********************************************/
 
 let regex = /\S+/g;
-//Busca los espacios en blanco y los elimina
-///\S+/ matchea todos los caracteres sin contar los espacios en blanco
-//g no importa que sean minisculas o mayusculas
 
-botonReproducir.forEach(boton => {
-  const botones = boton.parentNode; //parent node se utiliza para que trabaje en cada bloque padre de cada elemento y no se utilice siempre el primero
-  boton.value = botones.querySelector("span").textContent.match(regex).join(" "); //(.querySelector) va a seleccionar el primer elemento hijo del elemento padre})
+let indiceInicio;
+let estado;
 
-  //textContent : todo el texto que tiene adentro el elemento seleccionado previamente
-
-  //funcion match: captura todos los alfanumericos y los mete en un array - y el metodo join (" ") le da espacio a las palabras almacenadas con el match.
-});
-
-
-/* CREA UN ELEMENTO SPAN Y SE LO AGREGO AL DIV DECLARADO EN EL HTML*/
-let crearSpan = document.createElement("span");
-crearSpan.setAttribute("id", "spanReproductor")
-nombreCancionReproducida.appendChild(crearSpan);
-
-//MANEJO DE VOLUMEN AL INICIAR CANCION
-
-reproductorMusica.volume = 0.5;  // Hago que la cancion empiece con el 50% del volumen para despues interactuar con el
-
-botonReproducir.forEach(boton => {
-  let indiceInicio;
-  boton.addEventListener("click", () => {
-    for (let cancion of canciones) { //separa en constantes diferentees cada objeto en el JSON
-      if (cancion.nombre.toLowerCase() === boton.value.toLowerCase()) // Comparamos si canciones.nombre es igual a boton.value (toLowerCase es una funcion predeterminada que si existe alguna mayuscula la toma como igual)
-      {
-        reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
-        indiceInicio = cancion.id;  
-        reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
-        botonPlay.style.display = "none";
-        botonPause.style.display = "block";
-        crearSpan.setAttribute("id", "spanReproductor")
-        crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //El span creado cambia su contenido de texto dependiendo la cancion pasada al elemento audio. El objeto cancion toma como dato el nombre de la cancion y el nombre del artista.
-      }
+function modificarBotonAtras(){
+if(estado === "albumes"){
+    let indiceF;
+  let indiceFiltro;
+  let indiceFiltro2;
+    function cancionAtras() {
+    albums.forEach((song) => {
+      song.listado.forEach((c) => {
+        if (c.id === indiceInicio) {
+          indiceF = c;
+        }
+      });
+    });
+    indiceFiltro = albums.findIndex((song) => {
+      return song.listado.includes(indiceF);
+    });
+    indiceFiltro2 = albums[indiceFiltro].listado.findIndex((c) => {
+      return c.id === indiceF.id;
+    });
+  
+    if (indiceFiltro2 > 0) {
+      indiceInicio = albums[indiceFiltro].listado[indiceFiltro2 - 1].id;
+      reproductorMusica.src =
+        albums[indiceFiltro].listado[indiceFiltro2 - 1].url;
+      reproductorMusica.play();
+      botonPlay.style.display = "none";
+      botonPause.style.display = "block";
+      crearSpan.textContent = `${
+        albums[indiceFiltro].listado[indiceFiltro2 - 1].nombre
+      } - ${albums[indiceFiltro].listado[indiceFiltro2 - 1].artista}`;
     }
-    function cancionSiguiente() {
-      let indiceFiltro = canciones.findIndex((song) => song.id === indiceInicio)
-      if (indiceFiltro < canciones.length - 1) {
-        crearSpan.textContent = `${canciones[indiceFiltro + 1].nombre} - ${canciones[indiceFiltro + 1].artista}`
-        indiceInicio = canciones[indiceFiltro + 1].id;
-        console.log(canciones[indiceFiltro + 1].url);
-        reproductorMusica.src = canciones[indiceFiltro + 1].url;
-        reproductorMusica.play()
-      }
-    }
-
+  }
+cancionAtras()
+  }
+  else if(estado === "canciones"){
     function cancionAtras() {
       let indiceFiltro = canciones.findIndex((song) => song.id === indiceInicio)
       if(reproductorMusica.currentTime > 1){
@@ -83,76 +72,48 @@ botonReproducir.forEach(boton => {
       }
     }
   }
-
-    botonNextReproductor.removeEventListener("click", cancionSiguiente);
-    botonNextReproductor.addEventListener("click", cancionSiguiente);
-    botonAtrasReproductor.removeEventListener("click", cancionAtras);
-    botonAtrasReproductor.addEventListener("click",cancionAtras);
-  })
-
-});
-
-
-botonFiveNext.addEventListener("click", () => {
-  reproductorMusica.currentTime += 5; //.currenTime es la propiedad que me marca el tiempo actual de la cancion
-}
-)
-
-botonPause.addEventListener("click", () => {
-  reproductorMusica.pause(); //.pause es una funcion ya predeterminada del elemento audio
-  botonPlay.style.display = "block";
-  botonPause.style.display = "none";
-}
-)
-
-botonStop.addEventListener("click", () => { // evento boton Stop
-  reproductorMusica.pause(); //Damos el mismo valor al evento del boton Pause
-  reproductorMusica.currentTime = 0;//A diferencia igualamos el conteo a "0"
-  if (botonPause.style.display = "block") { //Condicional si el boton pause esta visible, hacemos que cuando apretamos en "stop", aparezca nuevamente el boton play.
-    botonPlay.style.display = "block";
-    botonPause.style.display = "none";
+cancionAtras()
   }
-}
-)
+  else if(estado === "playlist"){
 
+let indiceF;
+  let indiceFiltro;
+  let indiceFiltro2;
 
-botonPlay.addEventListener("click", (e) => { //Evento boton play para que se reproduzca si hay una cancion enviada al elemento audio
-  e.preventDefault()
-  if (reproductorMusica.src != "#") { //Condicion si el src no se encuentra vacio = se ejecuta la funcion play y se esconde el play y aparece el pause.
-    reproductorMusica.play()
+    function cancionAtras() {
+  playlist.forEach((song) => {
+    song.listado.forEach((c) => {
+      if (c.id === indiceInicio) {
+        indiceF = c;
+      }
+    });
+  });
+  indiceFiltro = playlist.findIndex((song) => {
+    return song.listado.includes(indiceF);
+  });
+  indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
+    return c.id === indiceF.id;
+  });
 
+  if (indiceFiltro2 > 0) {
+    indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 - 1].id;
+    reproductorMusica.src =
+      playlist[indiceFiltro].listado[indiceFiltro2 - 1].url;
+    reproductorMusica.play();
     botonPlay.style.display = "none";
     botonPause.style.display = "block";
+    crearSpan.textContent = `${
+      playlist[indiceFiltro].listado[indiceFiltro2 - 1].nombre
+    } - ${playlist[indiceFiltro].listado[indiceFiltro2 - 1].artista}`;
   }
 }
-);
-
-//funcion que cuando aprete click, adelante 5 seg la cancion
-botonFiveNext.addEventListener("click", () => {
-  reproductorMusica.currentTime += 5; //.currenTime es la propiedad que me marca el tiempo actual de la cancion
-}
-);
-
-//funcion que cuando aprete click, atrase 5 seg la cancion
-botonFiveBack.addEventListener("click", () => {
-  if (reproductorMusica.currentTime >= 6) {
-    reproductorMusica.currentTime -= 5
+cancionAtras()
   }
-});
 
+}
 
-volume.addEventListener("change", (ev) => {
-  reproductorMusica.volume = ev.currentTarget.value / 100;
-  console.log(reproductorMusica.volume);
-})
-
-/*****************************************************RENDERIZAR ALBUMS*********************************************************/
-const divAlbums = document.querySelectorAll("#divAlbums");
-
-//CAMBIAR A PARTIR DE ACA 
-function renderizadoDeAlbums(){
-
-  let indiceInicio;
+function modificarBotonNext(){
+  if(estado === "albumes"){
   let indiceF;
   let indiceFiltro;
   let indiceFiltro2;
@@ -183,36 +144,156 @@ function renderizadoDeAlbums(){
       } - ${albums[indiceFiltro].listado[indiceFiltro2 + 1].artista}`;
     }
   }
-  
-  function cancionAtras() {
-    albums.forEach((song) => {
-      song.listado.forEach((c) => {
-        if (c.id === indiceInicio) {
-          indiceF = c;
-        }
-      });
-    });
-    indiceFiltro = albums.findIndex((song) => {
-      return song.listado.includes(indiceF);
-    });
-    indiceFiltro2 = albums[indiceFiltro].listado.findIndex((c) => {
-      return c.id === indiceF.id;
-    });
-  
-    if (indiceFiltro2 > 0) {
-      indiceInicio = albums[indiceFiltro].listado[indiceFiltro2 - 1].id;
-      reproductorMusica.src =
-        albums[indiceFiltro].listado[indiceFiltro2 - 1].url;
-      reproductorMusica.play();
-      botonPlay.style.display = "none";
-      botonPause.style.display = "block";
-      crearSpan.textContent = `${
-        albums[indiceFiltro].listado[indiceFiltro2 - 1].nombre
-      } - ${albums[indiceFiltro].listado[indiceFiltro2 - 1].artista}`;
-    }
+cancionSiguiente()
   }
-  
-//CAMBIAR HASTA ACA
+  else if(estado === "canciones"){
+    function cancionSiguiente() {
+      let indiceFiltro = canciones.findIndex((song) => song.id === indiceInicio)
+      if (indiceFiltro < canciones.length - 1) {
+        crearSpan.textContent = `${canciones[indiceFiltro + 1].nombre} - ${canciones[indiceFiltro + 1].artista}`
+        indiceInicio = canciones[indiceFiltro + 1].id;
+        console.log(canciones[indiceFiltro + 1].url);
+        reproductorMusica.src = canciones[indiceFiltro + 1].url;
+        reproductorMusica.play()
+      }
+    }
+cancionSiguiente()
+  }
+  else if(estado === "playlist"){
+let indiceF;
+let indiceFiltro;
+let indiceFiltro2;
+
+function cancionSiguiente() {
+  playlist.forEach((song) => {
+    song.listado.forEach((c) => {
+      if (c.id === indiceInicio) {
+        indiceF = c;
+      }
+    });
+  });
+  indiceFiltro = playlist.findIndex((song) => {
+    return song.listado.includes(indiceF);
+  });
+  indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
+    return c.id === indiceF.id;
+  });
+  if (indiceFiltro2 < playlist[indiceFiltro].listado.length - 1) {
+    indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 + 1].id;
+    reproductorMusica.src =
+      playlist[indiceFiltro].listado[indiceFiltro2 + 1].url;
+    reproductorMusica.play();
+    botonPlay.style.display = "none";
+    botonPause.style.display = "block";
+    crearSpan.textContent = `${
+      playlist[indiceFiltro].listado[indiceFiltro2 + 1].nombre
+    } - ${playlist[indiceFiltro].listado[indiceFiltro2 + 1].artista}`;
+  }
+}
+cancionSiguiente()
+  }
+
+}
+
+
+botonReproducir.forEach(boton => {
+  const botones = boton.parentNode;
+  boton.value = botones.querySelector("span").textContent.match(regex).join(" ");
+
+
+});
+
+
+let crearSpan = document.createElement("span");
+crearSpan.setAttribute("id", "spanReproductor")
+nombreCancionReproducida.appendChild(crearSpan);
+
+
+reproductorMusica.volume = 0.25;  
+botonReproducir.forEach(boton => {
+ 
+  boton.addEventListener("click", () => {
+    for (let cancion of canciones) { 
+      if (cancion.nombre.toLowerCase() === boton.value.toLowerCase())
+      {
+        reproductorMusica.src = `${cancion.url}`
+estado = "canciones"
+        indiceInicio = cancion.id;  
+        reproductorMusica.play(); 
+        botonPlay.style.display = "none";
+        botonPause.style.display = "block";
+        crearSpan.setAttribute("id", "spanReproductor")
+        crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` 
+      }
+    }
+
+    botonNextReproductor.removeEventListener("click", modificarBotonNext);
+    botonNextReproductor.addEventListener("click", modificarBotonNext);
+    botonAtrasReproductor.removeEventListener("click", modificarBotonAtras);
+    botonAtrasReproductor.addEventListener("click",modificarBotonAtras);
+  })
+
+});
+
+
+botonFiveNext.addEventListener("click", () => {
+  reproductorMusica.currentTime += 5; 
+}
+)
+
+botonPause.addEventListener("click", () => {
+  reproductorMusica.pause(); 
+  botonPlay.style.display = "block";
+  botonPause.style.display = "none";
+}
+)
+
+botonStop.addEventListener("click", () => { 
+  reproductorMusica.pause(); 
+  reproductorMusica.currentTime = 0;
+  if (botonPause.style.display = "block") { 
+    botonPlay.style.display = "block";
+    botonPause.style.display = "none";
+  }
+}
+)
+
+
+botonPlay.addEventListener("click", (e) => { 
+  e.preventDefault()
+  if (reproductorMusica.src != "#") { 
+    reproductorMusica.play()
+
+    botonPlay.style.display = "none";
+    botonPause.style.display = "block";
+  }
+}
+);
+
+
+botonFiveNext.addEventListener("click", () => {
+  reproductorMusica.currentTime += 5;
+}
+);
+
+
+botonFiveBack.addEventListener("click", () => {
+  if (reproductorMusica.currentTime >= 6) {
+    reproductorMusica.currentTime -= 5
+  }
+});
+
+
+volume.addEventListener("change", (ev) => {
+  reproductorMusica.volume = ev.currentTarget.value / 100;
+  console.log(reproductorMusica.volume);
+})
+
+/*****************************************************RENDERIZAR ALBUMS*********************************************************/
+const divAlbums = document.querySelectorAll("#divAlbums");
+
+
+function renderizadoDeAlbums(){
 
 
 divAlbums.forEach((divsAlbunes) => {
@@ -221,15 +302,15 @@ divAlbums.forEach((divsAlbunes) => {
     renderizadoPrimario.style.display = "none";
     renderizadoSecundario.style.display = "flex";
     crearSpan.setAttribute("id", "spanReproductor");
-
-    botonNextReproductor.removeEventListener("click", cancionSiguiente);
-    botonAtrasReproductor.removeEventListener("click", cancionAtras);
-    botonNextReproductor.addEventListener("click", cancionSiguiente);
-    botonAtrasReproductor.addEventListener("click", cancionAtras);
+    estado = "albumes"
+        botonNextReproductor.removeEventListener("click", modificarBotonNext);
+    botonNextReproductor.addEventListener("click", modificarBotonNext);
+    botonAtrasReproductor.removeEventListener("click", modificarBotonAtras);
+    botonAtrasReproductor.addEventListener("click",modificarBotonAtras);
 
     botonAtras.addEventListener("click", () => {
-      botonNextReproductor.removeEventListener("click", cancionSiguiente);
-      botonAtrasReproductor.removeEventListener("click", cancionAtras);
+       botonNextReproductor.removeEventListener("click", modificarBotonNext);
+       botonAtrasReproductor.removeEventListener("click", modificarBotonAtras)
     });
 
     let spanAlbumes = divsAlbunes.querySelector("span").textContent;
@@ -335,133 +416,58 @@ divAlbums.forEach((divsAlbunes) => {
 renderizadoDeAlbums();
 
 /*************************************************RENDERIZADO DE PLAYLIST***********************************************************/
-
 let renderizadoPrimario = document.querySelector("#renderizadoPrimario");
 let renderizadoSecundario = document.querySelector("#renderizadoSecundario");
 let listasReproduccion = document.querySelectorAll("#listasReproduccion");
 
-//Metodo forEach = coloco una funcion a cada elemento del array - identifica cada elemento dentro de un array
-//Dentro se coloca una funcion callback que va a retornar por pantalla
-//Parametro = valor que doy para que interactue dentro de una funcion
-//Argumento = valores que paso cuando llamo la funcion
+
 
 function renderizadoDePlaylist(){
 
-let indiceInicio;
-let indiceF;
-let indiceFiltro;
-let indiceFiltro2;
-
-function cancionSiguiente() {
-  playlist.forEach((song) => {
-    song.listado.forEach((c) => {
-      if (c.id === indiceInicio) {
-        indiceF = c;
-      }
-    });
-  });
-  indiceFiltro = playlist.findIndex((song) => {
-    return song.listado.includes(indiceF);
-  });
-  indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
-    return c.id === indiceF.id;
-  });
-  if (indiceFiltro2 < playlist[indiceFiltro].listado.length - 1) {
-    indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 + 1].id;
-    reproductorMusica.src =
-      playlist[indiceFiltro].listado[indiceFiltro2 + 1].url;
-    reproductorMusica.play();
-    botonPlay.style.display = "none";
-    botonPause.style.display = "block";
-    crearSpan.textContent = `${
-      playlist[indiceFiltro].listado[indiceFiltro2 + 1].nombre
-    } - ${playlist[indiceFiltro].listado[indiceFiltro2 + 1].artista}`;
-  }
-}
-
-function cancionAtras() {
-  playlist.forEach((song) => {
-    song.listado.forEach((c) => {
-      if (c.id === indiceInicio) {
-        indiceF = c;
-      }
-    });
-  });
-  indiceFiltro = playlist.findIndex((song) => {
-    return song.listado.includes(indiceF);
-  });
-  indiceFiltro2 = playlist[indiceFiltro].listado.findIndex((c) => {
-    return c.id === indiceF.id;
-  });
-
-  if (indiceFiltro2 > 0) {
-    indiceInicio = playlist[indiceFiltro].listado[indiceFiltro2 - 1].id;
-    reproductorMusica.src =
-      playlist[indiceFiltro].listado[indiceFiltro2 - 1].url;
-    reproductorMusica.play();
-    botonPlay.style.display = "none";
-    botonPause.style.display = "block";
-    crearSpan.textContent = `${
-      playlist[indiceFiltro].listado[indiceFiltro2 - 1].nombre
-    } - ${playlist[indiceFiltro].listado[indiceFiltro2 - 1].artista}`;
-  }
-}
-
-
 listasReproduccion.forEach((divPlaylist) => {
-  //Recorro cada div con id "listasRe..." con el parametro divPlaylist
 
   divPlaylist.addEventListener("click", () => {
 
-
-    botonNextReproductor.removeEventListener("click", cancionSiguiente);
-    botonAtrasReproductor.removeEventListener("click", cancionAtras);
-    botonNextReproductor.addEventListener("click", cancionSiguiente);
-    botonAtrasReproductor.addEventListener("click", cancionAtras);
-
+    botonNextReproductor.removeEventListener("click", modificarBotonNext);
+    botonNextReproductor.addEventListener("click", modificarBotonNext);
+    botonAtrasReproductor.removeEventListener("click", modificarBotonAtras);
+    botonAtrasReproductor.addEventListener("click",modificarBotonAtras);
+    estado = "playlist";
     botonAtras.addEventListener("click", () => {
-      botonNextReproductor.removeEventListener("click", cancionSiguiente);
-      botonAtrasReproductor.removeEventListener("click", cancionAtras);
+    botonNextReproductor.removeEventListener("click", modificarBotonNext);
+       botonAtrasReproductor.removeEventListener("click", modificarBotonAtras)
     });
 
-    //Una vez que ya tengo cada div separado, escribo la funcionalidad a cada uno
-    renderizadoPrimario.style.display = "none"; //Hago desaparecer el contenedor principal
-    renderizadoSecundario.style.display = "flex"; //Hago aparecer el contenedor secundario que va alojar los span de las listas
+  
+    renderizadoPrimario.style.display = "none"; 
+    renderizadoSecundario.style.display = "flex"; 
 
     for (let playLista of divPlaylist.children) {
-      //divPlaylist que son los div por separados tomados con anterioridad, accedo .children a  los elementos que contiene cada div
-      let spanListas = playLista.querySelector("span"); //la variable va a tener el valor del elemento recorrido por playLista, en este caso, cada span dentro de cada div (trae el elemento).
+      let spanListas = playLista.querySelector("span"); 
 
       playlist.forEach((jsonPlaylist) => {
-        //Recorro el json playlist y doy un parametro para que lo recorra
         if (spanListas) {
-          //Creo un if de SpanListas para obviar el primer resultado que arroja que es "null"
 
           if (
             jsonPlaylist.nombre.toLowerCase() ===
             spanListas.textContent.toLowerCase()
           ) {
-            //Si el nombre del objeto recorrido coincide con el texto del span
             if (renderizadoSecundario.length === 0) {
-              //si la longitud de renderizado secundario es igual a 0, imprimo el listado de canciones
 
               jsonPlaylist.listado.forEach((cancionesListados) => {
-                //Si coincide creo la estructura de los elementos que se encuentran dentro de la propiedad "Listados"
-                const divPlaylist = document.createElement("div"); //div principal con todo el listado
-                const botonPlaylist = document.createElement("button"); //boton play
-                const divCancion = document.createElement("div"); //div de cancion general spans + button
-                const divSpanMasSpan = document.createElement("div"); //div donde se alojan los spans
-                const spanArtista = document.createElement("span"); //span con nombre artista
-                const spanCancion = document.createElement("span"); //span con nombre cancion
+                const divPlaylist = document.createElement("div"); 
+                const botonPlaylist = document.createElement("button"); 
+                const divCancion = document.createElement("div"); 
+                const divSpanMasSpan = document.createElement("div");
+                const spanArtista = document.createElement("span"); 
+                const spanCancion = document.createElement("span");
 
-                //doy atributos a los elementos creados
                 divPlaylist.setAttribute("id", "playlistDiv");
                 botonPlaylist.setAttribute("id", "botonPlaylist");
                 divCancion.setAttribute("id", "divCancion");
                 divSpanMasSpan.setAttribute("id", "divSpanMasSpan");
                 spanArtista.setAttribute("id", "spanArtista");
 
-                //entrelazo los elementos dentro de los contenedores que corresponden
                 renderizadoSecundario.appendChild(divPlaylist);
                 divPlaylist.appendChild(divCancion);
                 divCancion.appendChild(divSpanMasSpan);
@@ -469,13 +475,12 @@ listasReproduccion.forEach((divPlaylist) => {
                 divSpanMasSpan.appendChild(spanCancion);
                 divSpanMasSpan.appendChild(spanArtista);
 
-                //Agrego contenido a los elementos creados dependiendo el nombre de la cancion y el artista
                 spanArtista.textContent = `${cancionesListados.artista}`;
                 spanCancion.textContent = `${cancionesListados.nombre}`;
                 botonPlaylist.innerHTML =
                   '<img src="./Assets/PLAY.png" width="20px" heigth="20px">';
 
-                //reutilizo el evento play del reproductor modificando los valores
+
 
                 divCancion.addEventListener("click", () => {
                   if (
@@ -490,11 +495,10 @@ listasReproduccion.forEach((divPlaylist) => {
                     crearSpan.setAttribute("id", "spanReproductor");
                     crearSpan.textContent = `${cancionesListados.nombre} - ${cancionesListados.artista}`;
                     console.log(indiceInicio);
-                  } //Si el contenido del primer elemento del divSpanMasSpan(spanCancion) coincide con el nombre de la cancion dentro de Listado dentro de playlist.json, se le pasa el url al reproductor.
+                  }
                 });
               });
             } else {
-              //Al pasar nuevamente el div, se borra todo lo anterior impreso y se crea nuevamente el elemento con ID RenderizadoSecundario.
               renderizadoSecundario.innerHTML = `<div id="renderizadoSecundario"></div>`;
               jsonPlaylist.listado.forEach((cancionesListados) => {
                 const divPlaylist = document.createElement("div");
@@ -505,14 +509,12 @@ listasReproduccion.forEach((divPlaylist) => {
                 const spanCancion = document.createElement("span");
                 const imagenBotonLista = document.createElement("img");
 
-                //doy atributos a los elementos creados
                 divPlaylist.setAttribute("id", "playlistDiv");
                 botonPlaylist.setAttribute("id", "botonPlaylist");
                 divCancion.setAttribute("id", "divCancion");
                 divSpanMasSpan.setAttribute("id", "divSpanMasSpan");
                 spanArtista.setAttribute("id", "spanArtista");
 
-                //entrelazo los elementos dentro de los contenedores que corresponden
                 renderizadoSecundario.appendChild(divPlaylist);
                 divPlaylist.appendChild(divCancion);
                 divCancion.appendChild(divSpanMasSpan);
@@ -521,13 +523,13 @@ listasReproduccion.forEach((divPlaylist) => {
                 divSpanMasSpan.appendChild(spanArtista);
                 botonPlaylist.appendChild(imagenBotonLista);
 
-                //Agrego contenido a los elementos creados dependiendo el nombre de la cancion y el artista
+ 
                 spanArtista.textContent = `${cancionesListados.artista}`;
                 spanCancion.textContent = `${cancionesListados.nombre}`;
                 botonPlaylist.innerHTML =
                   '<img  src="./Assets/PLAY.png" width="20px" heigth="20px">';
 
-                //reutilizo el evento play del reproductor modificando los valores
+
                 divCancion.addEventListener("click", () => {
                   if (
                     divSpanMasSpan.children[0].textContent.toLowerCase() ===
@@ -541,7 +543,7 @@ listasReproduccion.forEach((divPlaylist) => {
                     crearSpan.setAttribute("id", "spanReproductor");
                     crearSpan.textContent = `${cancionesListados.nombre} - ${cancionesListados.artista}`;
                     console.log(indiceInicio);
-                  } //Si el contenido del primer elemento del divSpanMasSpan(spanCancion) coincide con el nombre de la cancion dentro de Listado dentro de playlist.json, se le pasa el url al reproductor.
+                  } 
                 });
               });
             }
@@ -554,6 +556,8 @@ listasReproduccion.forEach((divPlaylist) => {
 }
 
 renderizadoDePlaylist()
+
+
 
 /************************************INPUT BUSCAR CANCION***********************************************/
 
@@ -571,33 +575,30 @@ buscadorCancion.addEventListener("input", (e) => {
     let listaInput = document.createElement("div");
     listaInput.className = "listaInput";
 
-    canciones.forEach(cancion => {
-
+    canciones.forEach((cancion) => {
       let cancionInput = cancion.nombre.toLowerCase();
 
       if (cancionInput.includes(valorInput)) {
-
         let renglonLista = document.createElement("div");
-        renglonLista.className = "renglonLista"
+        renglonLista.className = "renglonLista";
 
         let botonLista = document.createElement("a");
         botonLista.className = "botonLista";
 
         botonLista.addEventListener("click", () => {
-          reproductorMusica.src = `${cancion.url}` //Se coloca template string porque debe pasarse como texto al html
-          reproductorMusica.play(); //si encuentra todo va a pasar el URL a audio y le da play a la musica
+          reproductorMusica.src = `${cancion.url}`;
+          reproductorMusica.play();
           botonPlay.style.display = "none";
           botonPause.style.display = "block";
-          crearSpan.setAttribute("id", "spanReproductor")
-          crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}` //paso el valor obtenido de nombre y artista al span de reproductor
-
+          crearSpan.setAttribute("id", "spanReproductor");
+          crearSpan.textContent = `${cancion.nombre} - ${cancion.artista}`;
         });
 
         let contenedorSpans = document.createElement("div");
-        contenedorSpans.setAttribute("id", "contenedorSpansListas")
+        contenedorSpans.setAttribute("id", "contenedorSpansListas");
 
         let spanCancion = document.createElement("span");
-        spanCancion.className = "spanCancion"
+        spanCancion.className = "spanCancion";
 
         let spanArtista = document.createElement("span");
         spanArtista.className = "spanArtista";
@@ -610,10 +611,9 @@ buscadorCancion.addEventListener("input", (e) => {
 
         spanCancion.textContent = `${cancion.nombre}`;
         spanArtista.textContent = `${cancion.artista}`;
-
       }
     });
-    renderizadoSecundario.appendChild(listaInput)
+    renderizadoSecundario.appendChild(listaInput);
   }
 });
 
@@ -624,31 +624,30 @@ let inputUserRegistro = document.querySelector("#formularioMailReg");
 let inputPassRegistro = document.querySelector("#formularioPassReg");
 
 botonReg.addEventListener("click", () => {
-  signupFormulario.style.display="flex";
-})
+  signupFormulario.style.display = "flex";
+});
 
 let botonCancelar = document.querySelectorAll("#botonCancelar");
 
-botonCancelar.forEach(boton => {
+botonCancelar.forEach((boton) => {
   boton.addEventListener("click", () => {
-  if(signupFormulario.style.display="flex"){
-    signupFormulario.style.display="none";
-  }
-  if(loginFormulario.style.display="flex"){
-    loginFormulario.style.display="none";
-  }
+    if ((signupFormulario.style.display = "flex")) {
+      signupFormulario.style.display = "none";
+    }
+    if ((loginFormulario.style.display = "flex")) {
+      loginFormulario.style.display = "none";
+    }
+  });
 });
-})
-
 
 signupFormulario.addEventListener("submit", (e) => {
   let user = inputUserRegistro.value;
   let pass = inputPassRegistro.value;
-  const guardarCuenta = (clave,valor) => { localStorage.setItem(clave,valor) }
-  guardarCuenta("usuarios",JSON.stringify({"user": user, "pass": pass}));
-  });
-
-
+  const guardarCuenta = (clave, valor) => {
+    localStorage.setItem(clave, valor);
+  };
+  guardarCuenta("usuarios", JSON.stringify({ user: user, pass: pass }));
+});
 
 let botonLogin = document.querySelector("#inicioLogin");
 let loginFormulario = document.querySelector("#login");
@@ -657,7 +656,7 @@ let inputPassLogin = document.querySelector("#formularioPass");
 let botonLoginSubmit = document.querySelector("#botonSubmitLogin");
 
 botonLogin.addEventListener("click", () => {
-loginFormulario.style.display="flex";
+  loginFormulario.style.display = "flex";
 });
 
 let baseDatosLogin = JSON.parse(localStorage.getItem("usuarios"));
@@ -665,16 +664,18 @@ let baseDatosLogin = JSON.parse(localStorage.getItem("usuarios"));
 console.log(baseDatosLogin);
 
 botonLoginSubmit.addEventListener("click", () => {
-  if(inputUserLogin.value === baseDatosLogin.user && inputPassLogin.value === baseDatosLogin.pass){
-    loginFormulario.style.display="none";
-    alert("Bienvenido Nuevamente")
-  }else{
-    alert("Credenciales incorrectas")
+  if (
+    inputUserLogin.value === baseDatosLogin.user &&
+    inputPassLogin.value === baseDatosLogin.pass
+  ) {
+    loginFormulario.style.display = "none";
+    alert("Bienvenido Nuevamente");
+  } else {
+    alert("Credenciales incorrectas");
   }
-})
+});
 
-
-/********************************************BOTON ATRAS****************************************************/
+/***********************BOTON ATRAS*******************************/
 
 const botonAtras = document.querySelector(".atrasBut");
 
@@ -682,7 +683,5 @@ botonAtras.addEventListener("click", () => {
   if (renderizadoPrimario.style.display === "none") {
     renderizadoPrimario.style.display = "block";
     renderizadoSecundario.style.display = "none";
-
   }
 });
-
